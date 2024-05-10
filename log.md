@@ -33,3 +33,40 @@ He's got us working on this Bank app at the moment, it's 11:54pm and I just got 
 I'm pleased with how it's all going, however, I just wish I had a bit more motivation to smash out way more code like I was able to before I busted my hand, but typing for hours is starting to hurt (which is kinda weird).. But I digress, tomorrow I'm going to finally finish off this secttion and then I'm off the discrete mathematics & itenegers for a bit, and on to more advanced DOM manipulation and then OOP with Javascript (god help me lol).
 
 **Link to work:** _on da wae_
+
+### Day 4: Thursday, 9th May, 2024
+
+#####
+
+**Today's Progress**: Final bits of the Banking app numbers section finished today, AND I fixed both the sort button bug and the transfer money bug; what a relief!!
+
+**Thoughts:** OK, so I'm the biggest dickhead ever: I spent a good hour or two trying to work out why my sort button was bugging out and causing all of my transactions to disappear from the transactions movements list, so I stepped through it with the debugger (thinking to myself, "_fuck, how am I going to fix this.._") and came to the realisation that......it was just a typo. LOL. Literally:
+
+_let sorted = false;_
+_btnSort.addEventListener('click', function (e) {_
+_e.preventDefault();_
+_// Original bug that broke the sort button:_
+_// displayMovements(currentAccount.movements, !sorted);_
+_displayMovements(currentAccount, !sorted);_
+_sorted = !sorted;_
+_});_
+
+That's the now working code above. What broke it was that I was trying to pass ONLY the movements array to my function, but my function was expecting the _ENTIRE OBJECT_, **inclusive** of the movements array. I literally just had to remove _.movements_ to redefine my object as it is: just the object.
+
+I also managed to have almost the exact same bug (_also a typo.._) with my transfer button, since originally I had typed it as **movementDates**:
+
+_receiverAcc.movementsDates.push(new Date().toISOString());_
+
+And voila, just like that, everything works again just like magic. What an absolute ballache it was trying to figure out what were just two silly little typos.. Life's hard when you're an idiot, eh.
+
+**Link to work:** _on da wae_
+
+### Day 5: Friday, 10th May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:** _on da wae_
