@@ -104,3 +104,34 @@ Cracked on since I was super-stoked I could understand what was being asked of m
 Then..I got up to the last 3 questions and really started to fumble the ball, consequently burning myself out for the day, but in my defence I did spend a solid 10hrs doing Leetcode & reading documentation. Like I said on X (_formerly known as Twitter lmao_): I can only getter better from here! (_right..?_)
 
 **Link to work:** [Leetcode!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events/leetcode.js)
+
+### Day 8: Monday, 13th May, 2024
+
+#####
+
+**Today's Progress**: Back into the coursework today, starting off with building some dynamically tabbed components, I learned about the **Guard Clause** (_sounds way cooler than it is lol_) as well as a new way to utilise the _return_ function in regards to error-checking & validation. I also learned about passing arguments to event handlers in order to create cool, dynamic animations and a unique UX.
+
+**Thoughts:** The guard clause part of today really reminded me of the ternary operators section of the course I did, in that I can use implied logic to achieve the goals I want to (_sorta like process of elimination_). The passing arguments to event handlers part of the course really cooked my chops, epsecially with how much abstraction was involved.. It did get a little bit information overload, but I pushed through, and managed to learn about some dynamic new ways to manage active tabs (_that aren't shitty little event listeners with 20+ lines of SCSS/CSS to make it work_).
+
+The two biggest takeways from today, however, were learning a proper (_and efficient_) way to handle Sticky Navigations, but it was a bit of a mental grind, as I tackled that section towards the very end of the day when I was already exhausted.. That said, though, the _Intersection Observer API_ is pretty rad, and it's very interesting to see the sorts of things I can do with it, like dynamically calculating the height of the viewport rectangle (_const navHeight = nav.getBoundingClientRect().height;_), in addition to revealing elements on scroll AND lazy-loading images dynamically for website efficiency:
+
+_const revealSection = function (entries, observer) {_
+_const [entry] = entries;_
+
+_if (entry.isIntersecting) return;_
+_entry.target.classList.remove('section--hidden');_
+_observer.unobserve(entry.target);_
+_};_
+_const sectionObserver = new IntersectionObserver(revealSection, {_
+_root: null,_
+_rootMargin: '0px',_
+_threshold: 0.15,_
+_});_
+_allSections.forEach(function (element) {_
+_sectionObserver.observe(element);_
+_section1.classList.add('section--hidden');_
+_});_
+
+The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it!
+
+**Link to work:** [Leetcode!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events/)
