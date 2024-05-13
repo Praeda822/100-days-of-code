@@ -90,3 +90,17 @@ _h1.closest('h1').style.background = 'var(--gradient-primary)';_
 The aforementioned code allows me to manipulate specific elements on the absolute fly, _dynamically_ but **WITHOUT** having to muck about with CSS/SCSS and/or make everything on my webpage static & boring, which honestly is pretty cool. A nice change from using _querySelector()_ all the time, which apparently sucks for code efficiency. The more you know!
 
 **Link to work:** [Advanced DOM & Event Manipulation](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
+
+### Day 7: Sunday, 12th May, 2024
+
+#####
+
+**Today's Progress**: Took a break from my coursework today and got stuck into some (easy) Leetcode!
+
+**Thoughts:** I'm not all that used to doing Leetcode questions, but they're pretty useful for getting my brain to wake up, especially when I start early in the mornings or I feel like a dickhead, for whatever reason, and I think I did pretty well, all things considered. I got the sum function right, I got the string reveral correct too, I even managed to write a function that took a string as an argument and then returned the number of vowels in that string.
+
+Cracked on since I was super-stoked I could understand what was being asked of me, and I wrote a function that took an array of strings and then returned a new array with all the strings capitalized (_notice the pattern with strings here lol_), and then I (_just_) managed to scrape my way through creating a function that takes an array of numbers and returns a new array with all the numbers doubled (_from the original array_).
+
+Then..I got up to the last 3 questions and really started to fumble the ball, consequently burning myself out for the day, but in my defence I did spend a solid 10hrs doing Leetcode & reading documentation. Like I said on X (_formerly known as Twitter lmao_): I can only getter better from here! (_right..?_)
+
+**Link to work:** [Leetcode!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events/leetcode.js)
