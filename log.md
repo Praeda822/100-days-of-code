@@ -116,20 +116,31 @@ Then..I got up to the last 3 questions and really started to fumble the ball, co
 The two biggest takeways from today, however, were learning a proper (_and efficient_) way to handle Sticky Navigations, but it was a bit of a mental grind, as I tackled that section towards the very end of the day when I was already exhausted.. That said, though, the _Intersection Observer API_ is pretty rad, and it's very interesting to see the sorts of things I can do with it, like dynamically calculating the height of the viewport rectangle (_const navHeight = nav.getBoundingClientRect().height;_), in addition to revealing elements on scroll AND lazy-loading images dynamically for website efficiency:
 
 _const revealSection = function (entries, observer) {_
+
 _const [entry] = entries;_
 
 _if (entry.isIntersecting) return;_
+
 _entry.target.classList.remove('section--hidden');_
-_observer.unobserve(entry.target);_
-_};_
+
+_observer.unobserve(entry.target);_ _};_
+
 _const sectionObserver = new IntersectionObserver(revealSection, {_
+
 _root: null,_
+
 _rootMargin: '0px',_
+
 _threshold: 0.15,_
+
 _});_
+
 _allSections.forEach(function (element) {_
+
 _sectionObserver.observe(element);_
+
 _section1.classList.add('section--hidden');_
+
 _});_
 
 The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it! Tomorrow's going to be a big one building dynamic slider components (_I've done it with SCSS using transform: translate and :focus_) so it should be...interesting (_:<_).
