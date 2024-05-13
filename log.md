@@ -132,6 +132,16 @@ _sectionObserver.observe(element);_
 _section1.classList.add('section--hidden');_
 _});_
 
-The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it!
+The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it! Tomorrow's going to be a big one building dynamic slider components (_I've done it with SCSS using transform: translate and :focus_) so it should be...interesting (_:<_).
 
-**Link to work:** [Leetcode!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events/)
+**Link to work:** [Image Lazy-Loading, Reveal-On-Scroll, & Sticky Nav!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
+
+### Day 9: Tuesday, 13th May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:** [Dynamic Slider Components, Lifecycle DOM Events, Efficient Script Loading](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
