@@ -72,3 +72,21 @@ And voila, just like that, everything works again just like magic. What an absol
 But I'd be lying if I said that learning the core concepts of JavaScript's engine and runtime, understanding execution contexts, the call stack, and memory management as well as the importance of scoping, and the distinctions between primitive and reference types in regards to memory management hasn't made a world of difference in understanding just how my code works. Now I can abstract whats happening a bit more clearly in my head. It has felt like I have had an epiphany by discovering something new every day this week, now my head's swimming with ideas of things I could build over the weekend...
 
 **Link to work:** [Advanced DOM & Event Manipulation](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
+
+### Day 6: Saturday, 11th May, 2024
+
+#####
+
+**Today's Progress**: Worked on some MORE DOM manipulation and event propagation in JavaScript!
+
+**Thoughts:** DOM propagation is...hard? I mean, I understand the whole bubbling concept and how I can propagate events upwards (or downwards). Worked a lot with _mouseenter_, and _mouseover_, even though _mouseenter_ doesn't bubble it's still extremely to use in the event where I **don't** want to, inevitably, apply a callback function to ~1000 elements in the DOM with a _forEach()_ loop.
+
+Regarding DOM Traversal/Manipulation, I also learned about the _closest_ method, which is SOOOOO helpful when working with this event delegeation sort of stuff and I've been using it when I need to find a particular parent of an element that matches a specified selector, i.e:
+
+_h1.closest('.header').style.background = 'var(--gradient-secondary)';_
+
+_h1.closest('h1').style.background = 'var(--gradient-primary)';_
+
+The aforementioned code allows me to manipulate specific elements on the absolute fly, _dynamically_ but **WITHOUT** having to muck about with CSS/SCSS and/or make everything on my webpage static & boring, which honestly is pretty cool. A nice change from using _querySelector()_ all the time, which apparently sucks for code efficiency. The more you know!
+
+**Link to work:** [Advanced DOM & Event Manipulation](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
