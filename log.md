@@ -117,29 +117,29 @@ The two biggest takeways from today, however, were learning a proper (_and effic
 
 _const revealSection = function (entries, observer) {_
 
-_const [entry] = entries;_
+    _const [entry] = entries;_
 
-_if (entry.isIntersecting) return;_
+    _if (entry.isIntersecting) return;_
 
-_entry.target.classList.remove('section--hidden');_
+    _entry.target.classList.remove('section--hidden');_
 
-_observer.unobserve(entry.target);_ _};_
+    _observer.unobserve(entry.target);_ _};_
 
 _const sectionObserver = new IntersectionObserver(revealSection, {_
 
-_root: null,_
+    _root: null,_
 
-_rootMargin: '0px',_
+    _rootMargin: '0px',_
 
-_threshold: 0.15,_
+    _threshold: 0.15,_
 
 _});_
 
 _allSections.forEach(function (element) {_
 
-_sectionObserver.observe(element);_
+    _sectionObserver.observe(element);_
 
-_section1.classList.add('section--hidden');_
+    _section1.classList.add('section--hidden');_
 
 _});_
 
