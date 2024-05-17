@@ -145,18 +145,18 @@ _});_
 
 The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it! Tomorrow's going to be a big one building dynamic slider components (_I've done it with SCSS using transform: translate and :focus_) so it should be...interesting (_:<_).
 
-**Link to work:** [Image Lazy-Loading, Reveal-On-Scroll, & Sticky Nav!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
+**Link to work:** [Image Lazy-Loading, Reveal-On-Scroll, & Sticky Nav!](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events/script.js)
 
-### Day 9: Tuesday, 13th May, 2024
+### Day 10: Wednesday, 14th May, 2024
 
 #####
 
-**Today's Progress**: Today I built an awesome, reusable, dynamic Javascript slider!!
+**Today's Progress**: Got stuck into the (_easy_) Leetcode grind again, today, because I'm a professional procrastinator!
 
-**Thoughts:** Today was rad as: I managed to not only follow along the tutorial in building the slider component, but I also managed to **RE-BUILD** it myself!! _AND_ then I managed to re-factor it, cleaned up a lot of my forEach loops and because I've been doing so much of, like, write out my code the first time how I think it works, then I edit it and reiterate on it so it makes sense, THEN I shorten it down.
+**Thoughts:** So...I sort of burnt myself out yesterday doing that constructor function and then trying to figure out how it works.. I should have just stopped whilst I was on a high with the slider, _lol_.
 
-Oh my goodness, it's crazy to think it was what..less than 2 weeks ago and I couldn't even figure out how in the blue moons a forEach loop would work, nor how I should use one lol. It's all just organising how you want the data to interact and then sort of tidying up the code (_housekeeping_) by wrapping (_encapsulating_) my code blocks in their own specific functions, with an init function wrapper.. It's almost too good to be true.
+I ripped into some Leetcode, though | I'm surprisingly getting a lot better at breaking down problems I see and converting them into blocks of code: The first filtering array one was pretty simple, as was repeating the string.
 
-Then, I threw myself in the deep-end and jumped into _Constructor functions_, but..kind of just followed a tutorial on it and I still don't know why or what the fuck the .this is all about lol. I'm probably just being impatient again..
+I also got to practice some input validation & error checking using my short circuiting skills from _AGES_ ago. It really is just repetition after all, huh..
 
-**Link to work:** [Dynamic Slider Components, Lifecycle DOM Events, Efficient Script Loading](https://github.com/Praeda822/Javascript-Notes/blob/master/13%20Advanced%20DOM%20and%20Events/script.js)
+**Link to work:**[EZ Leetcode Grindin', pt. 2: Electric Boogaloo](https://github.com/Praeda822/Javascript-Notes/blob/master/13%20Advanced%20DOM%20and%20Events/leetcode.js)
