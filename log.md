@@ -151,8 +151,12 @@ The lazy loading images one really got my head in a spin, but... I'll do some re
 
 #####
 
-**Today's Progress**:
+**Today's Progress**: Today I built an awesome, reusable, dynamic Javascript slider!!
 
-**Thoughts:**
+**Thoughts:** Today was rad as: I managed to not only follow along the tutorial in building the slider component, but I also managed to **RE-BUILD** it myself!! _AND_ then I managed to re-factor it, cleaned up a lot of my forEach loops and because I've been doing so much of, like, write out my code the first time how I think it works, then I edit it and reiterate on it so it makes sense, THEN I shorten it down.
 
-**Link to work:** [Dynamic Slider Components, Lifecycle DOM Events, Efficient Script Loading](https://github.com/Praeda822/Javascript-Notes/tree/master/13%20Advanced%20DOM%20and%20Events)
+Oh my goodness, it's crazy to think it was what..less than 2 weeks ago and I couldn't even figure out how in the blue moons a forEach loop would work, nor how I should use one lol. It's all just organising how you want the data to interact and then sort of tidying up the code (_housekeeping_) by wrapping (_encapsulating_) my code blocks in their own specific functions, with an init function wrapper.. It's almost too good to be true.
+
+Then, I threw myself in the deep-end and jumped into _Constructor functions_, but..kind of just followed a tutorial on it and I still don't know why or what the fuck the .this is all about lol. I'm probably just being impatient again..
+
+**Link to work:** [Dynamic Slider Components, Lifecycle DOM Events, Efficient Script Loading](https://github.com/Praeda822/Javascript-Notes/blob/master/13%20Advanced%20DOM%20and%20Events/script.js)
