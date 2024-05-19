@@ -115,33 +115,23 @@ Then..I got up to the last 3 questions and really started to fumble the ball, co
 
 The two biggest takeways from today, however, were learning a proper (_and efficient_) way to handle Sticky Navigations, but it was a bit of a mental grind, as I tackled that section towards the very end of the day when I was already exhausted.. That said, though, the _Intersection Observer API_ is pretty rad, and it's very interesting to see the sorts of things I can do with it, like dynamically calculating the height of the viewport rectangle (_const navHeight = nav.getBoundingClientRect().height;_), in addition to revealing elements on scroll AND lazy-loading images dynamically for website efficiency:
 
-_const revealSection = function (entries, observer) {_
+    const revealSection = function (entries, observer) {
+        const [entry] = entries;
+        if (entry.isIntersecting) return;
+        entry.target.classList.remove('section--hidden');
+        observer.unobserve(entry.target);
+    };
 
-    _const [entry] = entries;_
+    const sectionObserver = new IntersectionObserver(revealSection, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15,
+    });
 
-    _if (entry.isIntersecting) return;_
-
-    _entry.target.classList.remove('section--hidden');_
-
-    _observer.unobserve(entry.target);_ _};_
-
-_const sectionObserver = new IntersectionObserver(revealSection, {_
-
-    _root: null,_
-
-    _rootMargin: '0px',_
-
-    _threshold: 0.15,_
-
-_});_
-
-_allSections.forEach(function (element) {_
-
-    _sectionObserver.observe(element);_
-
-    _section1.classList.add('section--hidden');_
-
-_});_
+    allSections.forEach(function (element) {
+        sectionObserver.observe(element);
+        section1.classList.add('section--hidden');
+    });
 
 The lazy loading images one really got my head in a spin, but... I'll do some revision first thing in the morning tomorrow and rip back into it! Tomorrow's going to be a big one building dynamic slider components (_I've done it with SCSS using transform: translate and :focus_) so it should be...interesting (_:<_).
 
@@ -214,29 +204,29 @@ I spent **way** too long writing up a story for it all, just to inevitably scrap
 Well, not _really_. But this project was genuinely a lot of fun, because in the end I've been able to dynamically update what's on my screen based upon multiple-choice user-provided input, and it works dynamically, because I learned in the data science section (_that I'm not a fan of_), that since Objects in Javascrript are just reference copies to **Prototypes**, I can just call my method on the raw **object** _protype_ itself, and slap a cheeky _forEach_ loop & a cb function on it, too:
 
     // Clear previous choices
-    _function displayScene(sceneKey) {_
-        _const scene = scenes[sceneKey];_
+    function displayScene(sceneKey) {
+        const scene = scenes[sceneKey];
         storyElement.innerHTML = scene.text;
 
     // Clear previous choices
-        _choicesElement.innerHTML = '';_
+        choicesElement.innerHTML = '';
 
     // Display the choices
-        _Object.keys(scene.options).forEach(choiceText => {_
-            _const button = document.createElement('button');_
-            _button.textContent = choiceText;_
-            _button.classList.add('game--button');_
-            _button.onclick = () => {_
-                _if (scene.action) scene.action();_
-                _currentScene = scene.options[choiceText];_
-                _displayScene(currentScene);_
-            _};_
-            _choicesElement.appendChild(button);_
-            _});_
-        _}_
+        Object.keys(scene.options).forEach(choiceText => {
+            const button = document.createElement('button');
+            button.textContent = choiceText;
+            button.classList.add('game--button');
+            button.onclick = () => {
+                if (scene.action) scene.action();
+                currentScene = scene.options[choiceText];
+                displayScene(currentScene);
+            };
+            choicesElement.appendChild(button);
+            });
+        }
 
     // Start the game by displaying the initial scene
-        _displayScene(currentScene);_
+        displayScene(currentScene);
 
 How **good** is destructuring, _right_? Of course, I ended up mutating the entire project into a more...quiz kind of thing, and where I really struggled was in just geting the sum total results from counting up the votes to display at the end.. For some reason this has been a MASSIVE ballache, but I'll sleep on it and tackle it with a fresh pair of eyes tomorrow..
 
