@@ -174,3 +174,47 @@ I ripped into some Leetcode, though | I'm surprisingly getting a lot better at b
 I also got to practice some input validation & error checking using my short circuiting skills from _AGES_ ago. It really is just repetition after all, huh..
 
 **Link to work:**[EZ Leetcode Grindin', pt. 2: Electric Boogaloo](https://github.com/Praeda822/Javascript-Notes/blob/master/13%20Advanced%20DOM%20and%20Events/leetcode.js)
+
+### Day 11: Thursday, 16th May, 2024
+
+#####
+
+**Today's Progress**: Another day of _semi_-procastination.... Made a shitty rock-paper-scissors game out of, _mostly_, Javascript by manipulating the DOM.
+
+**Thoughts:** I'm a serial procastinator, so I sat down today and whipped together a very shitty rock, paper, scissors game. How original, right?
+
+That said it _was_ good practice with dom manipulation, but I need to be more consistent with how I select things.. I don't know why I keep alternating between using ids and query selectors. I just need more practice making dodgy apps, I guess.
+
+I implemented some of the concepts I'm most familiar with, like my random number generator(s), disgusting if/else blocks, and the contribution to a net carbon increase of Global Warming in the namespace. I did some refactoring, though, mainly with arrow functions and readability (_the first iteratrion was gross, lmao_). Good day, but, I enjoyed doing that little project.
+
+**Link to work:**[Rock, Paper, Scissors](https://github.com/Praeda822/RockPaperScissors)
+
+### Day 12: Friday, 17th May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:**
+
+### Day 13: Saturday, 18th May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:**
+
+### Day 14: Sunday, 20th May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:**
