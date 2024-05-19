@@ -205,8 +205,39 @@ I _really_ learned about **abstraction**, **encapsulation**, **inheitance**, and
 
 #####
 
-**Today's Progress**:
+**Today's Progress**: I've spent the last two days actively avoiding the data science theory and decided I'd do some more practice with DOM Manipulation, and taking the logic from my rock paper scissors project, I made..what was _originally_ a text adventure, like a _Choose-Your-Own-Adventure_ sorta'schtick.
 
-**Thoughts:** So I'm
+I spent **way** too long writing up a story for it all, just to inevitably scrap it because I'm an idiot and didn't think it would be a wise choice to at least _number_ the story slides so I didn't get confused, lol. _lmao_, even.
 
-**Link to work:**
+**Thoughts:** I burned myself out so hard trying to drill the theory into my head that I'm back to being a procastinating POS!
+
+Well, not _really_. But this project was genuinely a lot of fun, because in the end I've been able to dynamically update what's on my screen based upon multiple-choice user-provided input, and it works dynamically, because I learned in the data science section (_that I'm not a fan of_), that since Objects in Javascrript are just reference copies to **Prototypes**, I can just call my method on the raw **object** _protype_ itself, and slap a cheeky _forEach_ loop & a cb function on it, too:
+
+    // Clear previous choices
+    _function displayScene(sceneKey) {_
+        _const scene = scenes[sceneKey];_
+        storyElement.innerHTML = scene.text;
+
+    // Clear previous choices
+        _choicesElement.innerHTML = '';_
+
+    // Display the choices
+        _Object.keys(scene.options).forEach(choiceText => {_
+            _const button = document.createElement('button');_
+            _button.textContent = choiceText;_
+            _button.classList.add('game--button');_
+            _button.onclick = () => {_
+                _if (scene.action) scene.action();_
+                _currentScene = scene.options[choiceText];_
+                _displayScene(currentScene);_
+            _};_
+            _choicesElement.appendChild(button);_
+            _});_
+        _}_
+
+    // Start the game by displaying the initial scene
+        _displayScene(currentScene);_
+
+How **good** is destructuring, _right_? Of course, I ended up mutating the entire project into a more...quiz kind of thing, and where I really struggled was in just geting the sum total results from counting up the votes to display at the end.. For some reason this has been a MASSIVE ballache, but I'll sleep on it and tackle it with a fresh pair of eyes tomorrow..
+
+**Link to work:**[My shitty text game](https://github.com/Praeda822/PK_TextAdventure)
