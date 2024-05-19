@@ -193,28 +193,20 @@ I implemented some of the concepts I'm most familiar with, like my random number
 
 #####
 
-**Today's Progress**:
+**Today's Progress**: Today...I stopped putting off the data science theory lectures and ripped into the next section: **Object Oriented Programming with Javascript**!
 
-**Thoughts:**
+**Thoughts:** Man, **fuck** Javascript, honestly. Look, I get it, it's _not_ an object oriented language in the traditional sense, and using it like one is the literal difinition of three steps forwards, two steps back, but I digress..
 
-**Link to work:**
+I _really_ learned about **abstraction**, **encapsulation**, **inheitance**, and **polymorphism** today, and I _really_ wish I hadn't (_OK, I am, but it was **a LOT** to take in at once_). I got into **Prototypal Inheritance**, **Constructor Functions** (_and their implementation_), and had a bit of a sticky beak at **ES6 classes** and started to do some work on creating **Prototypes** before I felt completely burnt out with information overload. _Brilliant_.
 
-### Day 13: Saturday, 18th May, 2024
+**Link to work:**[Object Oriented Programming in Javascript](https://github.com/Praeda822/Javascript-Notes/tree/master/14%20OOP%20with%20Javascript)
 
-#####
-
-**Today's Progress**:
-
-**Thoughts:**
-
-**Link to work:**
-
-### Day 14: Sunday, 20th May, 2024
+### Days 13 & 14: Saturday & Sunday, 18th-19th May, 2024
 
 #####
 
 **Today's Progress**:
 
-**Thoughts:**
+**Thoughts:** So I'm
 
 **Link to work:**
