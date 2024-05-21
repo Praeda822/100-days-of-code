@@ -250,8 +250,12 @@ I'm still _not_ making it live, though: though the quiz logic _works_, and I'm (
 
 #####
 
-**Today's Progress**:
+**Today's Progress**: I did a lot of javascript methods practice questions and just kinda..got in the vibe of switching my mindsset up in regards to coding.
 
-**Thoughts:**
+**Thoughts:** So I was following another course I have, from _Brad Traversy_, and it's just like, a shit load of Javascript algorithms and data science practice questions - like self-imposed homework, man, it's _amazing_.
 
-**Link to work:**[Object Oriented Programming in Javascript](https://github.com/Praeda822/Javascript-Notes/tree/master/14%20OOP%20with%20Javascript)
+I've been thinking a lot about just coding in general, and I'm really starting to see how valuable and fun it is when you look at everything like, _how do I solve this problem using the tools I have?_, where your tools are the language you utitilise to solve that problem. I'm finding so much of it is just repetition, literally, just repeatedly exposing myself to problems like _how do I want to move this bit of data_, and abstracting the DOM is so cool when you know wtf is going on, I just genuinely don't know how to describe it.
+
+That said, I _still_ need to crack on with the Data Science & THeory section, starting with my favourite: **Prototypes**. I guess software's gotta' run fast, too..
+
+**Link to work:**[I'll show you when it's done](https://github.com/Praeda822/)
