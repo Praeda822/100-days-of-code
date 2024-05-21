@@ -231,3 +231,27 @@ Well, not _really_. But this project was genuinely a lot of fun, because in the 
 How **good** is destructuring, _right_? Of course, I ended up mutating the entire project into a more...quiz kind of thing, and where I really struggled was in just geting the sum total results from counting up the votes to display at the end.. For some reason this has been a MASSIVE ballache, but I'll sleep on it and tackle it with a fresh pair of eyes tomorrow..
 
 **Link to work:**[My shitty text game](https://github.com/Praeda822/PK_TextAdventure)
+
+### Day 15: Monday, 20th May, 2024
+
+#####
+
+**Today's Progress**: I **finished** the quiz app!!!!! Oh my god it was the _dumbest_ problem ever that got me:
+
+_ALL_ I needed to do was to check if the results scene was present, and if it was, to call the function responsible for picking the class.. I really got some good practice refactoring my code again, especially regarding making sure that my functions do **_ONE THING SPECIFICALLY_**. Thing I'm most proud of is that 've still managed to keep the logic that displays the choices just...working, and all from using a simple _forEach()_ loop.
+
+I'm still _not_ making it live, though: though the quiz logic _works_, and I'm (_somewhat_) confidently manipulating the DOM (_and the google search engine - people on StackOverflow are rude dogs, lmao_), but it still needs way more work with the CSS. I might make a full-blown SASS project out of this one, I'm not sure yet. Still feels **incredible** to have it in a working state!!
+
+**Thoughts:** I feel so stupid. But at the same time, like, I genuinely feel like I'm starting to _get_ it? Idk, it's weird, I can understand what's going on and I'm (_somehow_) keeping it all working, refactoring as I go and trying to shortern code where possible without making it look _too_ jank.. But I still kind of feel like if I stop paying attention, or stop coding for even a day or two, that it will all just _fall out of my head_. Despite that stressor, though, things are going _well_ after 2 weeks of code. Again, I wonder if _anyone_ reads these..
+
+**Link to work:**[PKs Text Adventure](https://github.com/Praeda822/PK_TextAdventure)
+
+### Day 16: Tuesday, 21st May, 2024
+
+#####
+
+**Today's Progress**:
+
+**Thoughts:**
+
+**Link to work:**[Object Oriented Programming in Javascript](https://github.com/Praeda822/Javascript-Notes/tree/master/14%20OOP%20with%20Javascript)
