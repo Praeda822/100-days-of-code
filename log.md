@@ -258,7 +258,7 @@ I've been thinking a lot about just coding in general, and I'm really starting t
 
 That said, I _still_ need to crack on with the Data Science & THeory section, starting with my favourite: **Prototypes**. I guess software's gotta' run fast, too..
 
-**Link to work:**[OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
+**Link to work:** [OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
 
 ### Days 17-23: Wednesday-Tuesday, 22nd May-28th May, 2024
 
@@ -289,7 +289,7 @@ I did, however, read **_Design Patterns: Elements of Reusable Object-Oriented So
 
 I've also been starting to get suprisingly decent at refactoring my code, too, particularly with the whole shortening to arrow function, break it up into functions that do specific things, **HELPER FUNCTIONS** (_OH MY GOOOOOOD_)
 
-**Link to work:**[OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
+**Link to work:** [OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
 
 ### Days 23-29: Wednesday-Monday, 28th May - Monday 3rd June, 2024
 
@@ -303,7 +303,7 @@ But it wasn't all hand-holding singing*kumbaya* into the fading sunset, _oh no n
 
 I also spent a solid day refactoring code from my old projects, mainly my Text Adventure (_which still isn't done, only God can judge me_), the dice-rolling number game, and the banking app project. Refactoring literally just means _move all your shit into neat & tidy functions that do exactly the same shit, only specifically, and with the functionality to use them on other instantiated objects as methods_. Man, doing this shit for 10hrs a day minimum maybe wasn't the smartest idea, but at least it's going in..
 
-**Link to work:**[Mapty Workout Project](https://github.com/Praeda822/Javascript-Notes/tree/master/15%20Mapty%20Project)
+**Link to work:** [Mapty Workout Project](https://github.com/Praeda822/Javascript-Notes/tree/master/15%20Mapty%20Project)
 
 ### Day 30: Tuesday, 4th June, 2024
 
@@ -390,4 +390,4 @@ All that horseshit code you see above you there is _supposed_ to work, and by wo
 
 **Thoughts:** 30 days of consecutive code!!! And to celebrate my milestone accomplishment I spent probably half of my coding time today just googling shit and feeling like a _right fucking monkey_. But get this, right: I did the full _lazy POS_ shit thing and copy/pasted the code from the QA section, and even _THAT_ times out, **despite** both instructor and student swearing black & blue that it's all _right-and-tight yeah looks good mate_. So I threw my code into ChatGPT, saved, commit, and reviewed the changes on Github and it's using _Object.values()_ to read the properties of the object, when almost **EVERYONE ELSE IN THE ENTIRE GODDAMN QA IS USING ARRAY DESTRUCTURING TO ACCESS THE SAME SHIT**. I even tried passing _Object.create()_ onto the objects themselves and then filling them with the data _from_ that object, _that's_ how fucked up this part of the section was.. Oh, and there's **no** docs for the shit. Nooice.
 
-**Link to work:**[Outdated course content rocks](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)
+**Link to work:** [Outdated course content can eat my ass](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)
