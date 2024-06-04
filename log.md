@@ -250,7 +250,7 @@ I'm still _not_ making it live, though: though the quiz logic _works_, and I'm (
 
 #####
 
-**Today's Progress**: I did a lot of javascript methods practice questions and just kinda..got in the vibe of switching my mindsset up in regards to coding.
+**Today's Progress**: I did a lot of javascript methods practice questions and just kinda..got in the vibe of switching my mindset up in regards to coding.
 
 **Thoughts:** So I was following another course I have, from _Brad Traversy_, and it's just like, a shit load of Javascript algorithms and data science practice questions - like self-imposed homework, man, it's _amazing_.
 
@@ -258,4 +258,35 @@ I've been thinking a lot about just coding in general, and I'm really starting t
 
 That said, I _still_ need to crack on with the Data Science & THeory section, starting with my favourite: **Prototypes**. I guess software's gotta' run fast, too..
 
-**Link to work:**[I'll show you when it's done](https://github.com/Praeda822/)
+**Link to work:**[OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
+
+### Days 17-23: Wednesday-Tuesday, 22nd May-28th May, 2024
+
+**Today's Progress**: This week I started to get my hands dirty with Object-Oriented Programming (_OOP_) concepts, delving into the four fundamental principles: **Abstraction**, **Encapsulation**, **Inheritance**, and **Polymorphism**. I kicked this off with creating simple constructor functions and classes in JavaScript and classes to create objects that can interact with each other.
+
+But you know what we _really_ got into? **_Prototypal Inheritance_**. I learned about how methods are delegated, got my head around the inheritance chain, learned how it's the **PROTOTYPES** themselves that are the big bosses of the Javascript world. I also got to work with setters & getters, and I spent a lot of time learning how to refactor my code, and by that I mean that I want to try to break up my code into individual pieces that have a unique task to do, and they specifically _only_ do that task, then I essentially call those functions on instantiated objects (_I know, fancy, right?_) to interact with them which has been _wild_.
+
+The Biggest thing I worked on was understanding ES6 classes, how they work, their implementation, as well as _WHY_ I want to be using them instead of just polluting the global namespace with my shit. ES6 classes are just a layer of abstraction over Constructor Functions since they hide a lot of what's going on behind the scenes. But that's why we have both the _extends_ & _super_ keywords! Most annoying part about that was having to remember to initialize my _.this_ keyword.
+
+I got stuck in to both _Public/Private Fields/Instances_, and how to implement (_some pretty fuckin' dodgy_) **encapsulation** within my code structure. And I also got to work with using _Object.create()_, which was a really nice way of creating new objects...only then you have to manually set up the prototypal inheritance chain since it **_only_** makes _EMPTY_ objects. Found myself often being a layer out when setting up my inheritance.
+
+**Thoughts:** OK, so I'm summarising the week's work here because FUCK ME did I do some work.
+
+Understanding the prototypal inheritance wasn't anywhere near as bad as I thought it would be. Except, **_maybe_** when we did _this_ shit:
+
+    // First prototype-chain (the inner scope)
+        console.log(patrick.__proto__);
+    // Second prototype-chain (the inner scope's outer scope & also my constructor)
+        console.log(patrick.__proto__.__proto__);
+    // Final prototype-chain (the inner scope's outer scope's outer scope, which is NULL)
+        console.log(patrick.__proto__.__proto__.__proto__);
+
+That was beyond fucked the first time. But I persevered, and now it actually does make sense in my head and I'm able to kind of _visualise_ the prototype boxes (_that's how I remember it, anyway_). Most importantly, I undestand that it's the **PROTOTYPES** that have access to all the cool methods, not the objects themselves. Which makes **Prototypes** the _de-facto_ landlords of javascript memory management, and the **Objects**, essentially, renters (_since they're delegated methods from their prototypes & via prototypal inheritance my GOD I'm getting GOOD at this shit_)
+
+I'm also really starting to notice a pattern in how coding is, like, _performed_: everything is just about organising data to be displayed to the user in a simple, easy-to-understand, dynamically formatted way for minimal maintenance and/or oversight.
+
+I did, however, read **_Design Patterns: Elements of Reusable Object-Oriented Software_**, by **_The Gang of Four_** not just once, but _twice_, and I **STILL** don't understand a fuckin' thing going on because it's all written in C++. That said, I _did_ gleam some insight out of the book in regards to OOP and Javascript, as well as how I could (_potentially_) use the patterns within my own code, and they were the 5 design patterns: **Factory**, **Singleton**, **Observer**, **Decorator**, and **Adapter**.
+
+I've also been starting to get suprisingly decent at refactoring my code, too, particularly with the whole shortening to arrow function, break it up into functions that do specific things, **HELPER FUNCTIONS** (_OH MY GOOOOOOD_)
+
+**Link to work:**[OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
