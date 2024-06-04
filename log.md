@@ -262,7 +262,7 @@ That said, I _still_ need to crack on with the Data Science & THeory section, st
 
 ### Days 17-23: Wednesday-Tuesday, 22nd May-28th May, 2024
 
-**Today's Progress**: This week I started to get my hands dirty with Object-Oriented Programming (_OOP_) concepts, delving into the four fundamental principles: **Abstraction**, **Encapsulation**, **Inheritance**, and **Polymorphism**. I kicked this off with creating simple constructor functions and classes in JavaScript and classes to create objects that can interact with each other.
+**Week's Progress**: This week I started to get my hands dirty with Object-Oriented Programming (_OOP_) concepts, delving into the four fundamental principles: **Abstraction**, **Encapsulation**, **Inheritance**, and **Polymorphism**. I kicked this off with creating simple constructor functions and classes in JavaScript and classes to create objects that can interact with each other.
 
 But you know what we _really_ got into? **_Prototypal Inheritance_**. I learned about how methods are delegated, got my head around the inheritance chain, learned how it's the **PROTOTYPES** themselves that are the big bosses of the Javascript world. I also got to work with setters & getters, and I spent a lot of time learning how to refactor my code, and by that I mean that I want to try to break up my code into individual pieces that have a unique task to do, and they specifically _only_ do that task, then I essentially call those functions on instantiated objects (_I know, fancy, right?_) to interact with them which has been _wild_.
 
@@ -290,3 +290,15 @@ I did, however, read **_Design Patterns: Elements of Reusable Object-Oriented So
 I've also been starting to get suprisingly decent at refactoring my code, too, particularly with the whole shortening to arrow function, break it up into functions that do specific things, **HELPER FUNCTIONS** (_OH MY GOOOOOOD_)
 
 **Link to work:**[OOP In Javascript](https://github.com/Praeda822/Javascript-Notes/blob/master/14%20OOP%20with%20Javascript/script.js)
+
+### Days 23-29: Wednesday-Monday, 28th May - Monday 3rd June, 2024
+
+**Week's Progress**: Gonna be another **BIG** one for the week again. I spent the entire week working on a project that revolved entirely around **_OOP and Javascript_** to really hammer home the _PTSD_ from learning OOP for the first-time through the lens of the Javascript language.
+
+I also got to work with using the Geolocation API to get a users location relative to pulling their GPS data out of an online object. How _fuckin'_ rad is **that**!? We went over the project architecture & structure initially, and yeah, _OK_, it took me 2 whole days to get my head around the fact that a flowchart (_gonna call 'em flowie's from now on_) map makes just **starting** a project SO. MUCH. EASIER. It's just ES6 classes; all the way down (_and up, lol_). I also discovered the beauty of, again, bundling my functionalities together, like having a function for all my _eventHandlers_! The more I code, the more I start to see where and what to refactor, which is _so_ sick.
+
+**Thoughts:** I did struggle a bit with rmembering how destructuring works, but then I literally realised that I do destructuring on wow with how abilities and keybinds work, and then all of a sudden, _LIKE FUCKEN MAGIC_, it made sense to me!! I'm _really_ starting to love using mnemonics for coding, it makes things so much easier to understand.
+
+But it wasn't all hand-holding singing*kumbaya* into the fading sunset, _oh no no no_. I ended up getting so lost in the code after looking at it for so long that I was having a meltdown over the fact that I kept geting a return of _NULL_ in the console **for a DOM elemnet I hadn't even fucking _rendered_ yet**, and then I let my stress and over-tiredness spill over into code so whe I fixed one bug 2 _more_ bugs would appear, in this case those new bugs being my **map markers** simply just _disappearing_ off the _fucking_ map!! Oh wait, it was just me being a professional _dickhead_ again and forgetting to _actually update the map with a marker when a new one is rendered in the form_.
+
+**Link to work:**[Mapty Workout Project](https://github.com/Praeda822/Javascript-Notes/tree/master/15%20Mapty%20Project)
