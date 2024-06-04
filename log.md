@@ -301,4 +301,93 @@ I also got to work with using the Geolocation API to get a users location relati
 
 But it wasn't all hand-holding singing*kumbaya* into the fading sunset, _oh no no no_. I ended up getting so lost in the code after looking at it for so long that I was having a meltdown over the fact that I kept geting a return of _NULL_ in the console **for a DOM elemnet I hadn't even fucking _rendered_ yet**, and then I let my stress and over-tiredness spill over into code so whe I fixed one bug 2 _more_ bugs would appear, in this case those new bugs being my **map markers** simply just _disappearing_ off the _fucking_ map!! Oh wait, it was just me being a professional _dickhead_ again and forgetting to _actually update the map with a marker when a new one is rendered in the form_.
 
+I also spent a solid day refactoring code from my old projects, mainly my Text Adventure (_which still isn't done, only God can judge me_), the dice-rolling number game, and the banking app project. Refactoring literally just means _move all your shit into neat & tidy functions that do exactly the same shit, only specifically, and with the functionality to use them on other instantiated objects as methods_. Man, doing this shit for 10hrs a day minimum maybe wasn't the smartest idea, but at least it's going in..
+
 **Link to work:**[Mapty Workout Project](https://github.com/Praeda822/Javascript-Notes/tree/master/15%20Mapty%20Project)
+
+### Day 30: Tuesday, 4th June, 2024
+
+**Today's Progress**: Today I started learning about AJAX: Aynschronous Javascript and XML. The theory part was great, but then I hit a huge blocker in regards to the actual course content itself:
+
+    const btn = document.querySelector('.btn-country');
+    const countriesContainer = document.querySelector('.countries');
+
+    // The OLD SKOOL Way
+    // ========================================
+
+    // FINALLY I'll assign this entire functionality to its own respective function
+    const getCountryData = function (country) {
+    // First I create a new object and call the XMLHttpRequest() function, storing that result in a variable
+
+    const request = new XMLHttpRequest();
+
+    // Next I call the open function on my variable and pass in the 'GET' data-type, followed by a string containing where the AJAX call needs to be made
+    // This is also known as the API Endpoint
+    request.open('GET', `https://restcountries.com/v3.1/name/${country}`, true); // ensure async is true
+
+    // ADDED: Set a timeout for the request to handle potential timeout issues
+    request.timeout = 10000; // Set timeout to 10 seconds
+
+    // And I'll then need to SEND that request off
+    request.send();
+
+    // Then I need to register a callback on the request object that listens for the 'load' event
+    // So this returns a SHITLOAD of text (in JSON format)
+    request.addEventListener('load', function () {
+        // And then I need to convert that JSON string into my javascript object
+        // Since data is an array containing an object, I can destructure it as well
+        if (request.status >= 200 && request.status < 300) {
+        // ADDED: Check if the request was      successful
+         const [data] = JSON.parse(this.responseText);
+        console.log(data);
+
+      // And then I'll create a template literal to create the cool card thing in the HTML
+      // Remember I can use + to convert to a number
+      const html = `
+      <article class="country">
+      <img class="country__img" src="${Object.values(data.flags)[0]}" />
+      <div class="country__data">
+        <h3 class="country__name">${data.name.common}</h3>
+        <h4 class="country__region">${data.region}</h4>
+        <p class="country__row"><span>👫</span>${(
+          +data.population / 25687041
+        ).toFixed(1)} people</p>
+        <p class="country__row"><span>🗣️</span>${Object.values(
+          data.languages
+        ).join(', ')}</p>
+        <p class="country__row"><span>💰</span>${
+          Object.values(data.currencies)[0].name
+        }</p>
+      </div>
+    </article>
+    `;
+      // And then I'll pretty much just add this to my document by sending it to my countries container
+      // Which would be great if I could even FUCKING see it since the API times out every single fucken time
+      countriesContainer.insertAdjacentHTML('beforeend', html);
+      countriesContainer.style.opacity = 1;
+        } else {
+        // Handle unsuccessful requests
+      console.error('Error:', request.statusText);
+        }
+    });
+
+    // Error handling for network issues
+     request.addEventListener('error', function () {
+        console.error('Request failed');
+    });
+
+        // Timeout handling
+        request.addEventListener('timeout', function    () {
+        console.error('Request timed out');
+        });
+    };
+
+    getCountryData('australia');
+    getCountryData('portugal');
+    getCountryData('germany');
+
+All that horseshit code you see above you there is _supposed_ to work, and by work, I mean it's meant to render 3 little cards on the screen showing details about those countries, but the course content itself is outdated, and the website responsible for the API can't even be reached.. So Idek wtf to do about it. ChatGPT was able to get it working (_where you can see those Added comments_), but that was only **VERY briefly** as for whatever reason the API just times out over & over again, despite people in the course from _circa ~10 days ago_ stating that they were able to get it all working fine???
+
+**Thoughts:** 30 days of consecutive code!!! And to celebrate my milestone accomplishment I spent probably half of my coding time today just googling shit and feeling like a _right fucking monkey_. But get this, right: I did the full _lazy POS_ shit thing and copy/pasted the code from the QA section, and even _THAT_ times out, **despite** both instructor and student swearing black & blue that it's all _right-and-tight yeah looks good mate_. So I threw my code into ChatGPT, saved, commit, and reviewed the changes on Github and it's using _Object.values()_ to read the properties of the object, when almost **EVERYONE ELSE IN THE ENTIRE GODDAMN QA IS USING ARRAY DESTRUCTURING TO ACCESS THE SAME SHIT**. I even tried passing _Object.create()_ onto the objects themselves and then filling them with the data _from_ that object, _that's_ how fucked up this part of the section was.. Oh, and there's **no** docs for the shit. Nooice.
+
+**Link to work:**[Outdated course content rocks](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)
