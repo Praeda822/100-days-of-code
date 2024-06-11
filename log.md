@@ -16,7 +16,7 @@ He's got us working on this Bank app at the moment, it's 11:54pm and I just got 
 
 #####
 
-**Today's Progress**: Today I did some more work on my Banking app, working specifically with more dates, times, and integers, as well as how to both manipulate the data, and transform said data into whatever I need it to be. Also went back into my Javascript Data Structures & Theory lectures.
+**Today's Progress:** Today I did some more work on my Banking app, working specifically with more dates, times, and integers, as well as how to both manipulate the data, and transform said data into whatever I need it to be. Also went back into my Javascript Data Structures & Theory lectures.
 
 **Thoughts:** Today was mainly spent just mucking around with the new Date() method because I'm an idiot and sometimes don't understand on the first go through..or fifth. I worked on primarily getting the transaction list to be functional by means of having the transactions reflect an automatically calculated time/date (In the Commonwealth format: _DAY, MONTH, YEAR_, sorrynotsorry Americans) and to also have those same dates/times/etc reflect upon other accounts' transaction history, like say if I wanted to take a loan, I can now hit the button and not only have that transaction reflect instantly, but also have it reflect, again, on other accounts, but this was only using template literals which is a bit...messy. I'll refactor it again tomorrow, and see how I go; my brain is fried again from doing this shit for hours straight.
 
@@ -26,7 +26,7 @@ He's got us working on this Bank app at the moment, it's 11:54pm and I just got 
 
 #####
 
-**Today's Progress**: More work on the banking app today... Spent way too long mucking around with the Intl API, and worked on getting more dates to reflect on the app dynamically
+**Today's Progress:** More work on the banking app today... Spent way too long mucking around with the Intl API, and worked on getting more dates to reflect on the app dynamically
 
 **Thoughts:** So.. I somehow managed to break the trnasfer money part of my app..Still not sure how though, lol. Everything else works: requesting a loan, closing an account, changing users etc. Also managed to completely break the Sort button at the bottom, which no longer sorts and just deletes the entire transaction list which isn't ideal.. but I reckon it's going to be a, wait for it, TOMORROW PROBLEM because it's 11:45pm and I am, again, rooted, having slogged through more of my course content as soon as I got off work.
 
@@ -38,7 +38,7 @@ I'm pleased with how it's all going, however, I just wish I had a bit more motiv
 
 #####
 
-**Today's Progress**: Final bits of the Banking app numbers section finished today, AND I fixed both the sort button bug and the transfer money bug; what a relief!!
+**Today's Progress:** Final bits of the Banking app numbers section finished today, AND I fixed both the sort button bug and the transfer money bug; what a relief!!
 
 **Thoughts:** OK, so I'm the biggest dickhead ever: I spent a good hour or two trying to work out why my sort button was bugging out and causing all of my transactions to disappear from the transactions movements list, so I stepped through it with the debugger (thinking to myself, "_fuck, how am I going to fix this.._") and came to the realisation that......it was just a typo. LOL. Literally:
 
@@ -65,7 +65,7 @@ And voila, just like that, everything works again just like magic. What an absol
 
 #####
 
-**Today's Progress**: Worked on DOM manipulations and event handling in JavaScript! Implemented modal interactions, manipulated styles, and attributes dynamically, and played with advanced event handling concepts like event bubbling and capturing. Learned about the power of _.addEventListener_ and the nuances of event propagation
+**Today's Progress:** Worked on DOM manipulations and event handling in JavaScript! Implemented modal interactions, manipulated styles, and attributes dynamically, and played with advanced event handling concepts like event bubbling and capturing. Learned about the power of _.addEventListener_ and the nuances of event propagation
 
 **Thoughts:** I legit had no idea you could accomplish so much with _.addEventListener_.. I feel a bit silly thinking about all the previous code I've written and how it looks like hot garbage because I would apply my event listeners directly to static objects containing my elements instead of doing it dynamically like I learned today. Really got stuck into the nitty gritty of how Javascript works behind the scenes today, too; what a _HEADACHE_.
 
@@ -77,7 +77,7 @@ But I'd be lying if I said that learning the core concepts of JavaScript's engin
 
 #####
 
-**Today's Progress**: Worked on some MORE DOM manipulation and event propagation in JavaScript!
+**Today's Progress:** Worked on some MORE DOM manipulation and event propagation in JavaScript!
 
 **Thoughts:** DOM propagation is...hard? I mean, I understand the whole bubbling concept and how I can propagate events upwards (or downwards). Worked a lot with _mouseenter_, and _mouseover_, even though _mouseenter_ doesn't bubble it's still extremely to use in the event where I **don't** want to, inevitably, apply a callback function to ~1000 elements in the DOM with a _forEach()_ loop.
 
@@ -95,7 +95,7 @@ The aforementioned code allows me to manipulate specific elements on the absolut
 
 #####
 
-**Today's Progress**: Took a break from my coursework today and got stuck into some (easy) Leetcode!
+**Today's Progress:** Took a break from my coursework today and got stuck into some (easy) Leetcode!
 
 **Thoughts:** I'm not all that used to doing Leetcode questions, but they're pretty useful for getting my brain to wake up, especially when I start early in the mornings or I feel like a dickhead, for whatever reason, and I think I did pretty well, all things considered. I got the sum function right, I got the string reveral correct too, I even managed to write a function that took a string as an argument and then returned the number of vowels in that string.
 
@@ -109,7 +109,7 @@ Then..I got up to the last 3 questions and really started to fumble the ball, co
 
 #####
 
-**Today's Progress**: Back into the coursework today, starting off with building some dynamically tabbed components, I learned about the **Guard Clause** (_sounds way cooler than it is lol_) as well as a new way to utilise the _return_ function in regards to error-checking & validation. I also learned about passing arguments to event handlers in order to create cool, dynamic animations and a unique UX.
+**Today's Progress:** Back into the coursework today, starting off with building some dynamically tabbed components, I learned about the **Guard Clause** (_sounds way cooler than it is lol_) as well as a new way to utilise the _return_ function in regards to error-checking & validation. I also learned about passing arguments to event handlers in order to create cool, dynamic animations and a unique UX.
 
 **Thoughts:** The guard clause part of today really reminded me of the ternary operators section of the course I did, in that I can use implied logic to achieve the goals I want to (_sorta like process of elimination_). The passing arguments to event handlers part of the course really cooked my chops, epsecially with how much abstraction was involved.. It did get a little bit information overload, but I pushed through, and managed to learn about some dynamic new ways to manage active tabs (_that aren't shitty little event listeners with 20+ lines of SCSS/CSS to make it work_).
 
@@ -141,7 +141,7 @@ The lazy loading images one really got my head in a spin, but... I'll do some re
 
 #####
 
-**Today's Progress**: Today was rad as: I managed to not only follow along the tutorial in building the slider component, but I also managed to **RE-BUILD** it myself!! _AND_ then I managed to re-factor it, cleaned up a lot of my forEach loops and because I've been doing so much of, like, write out my code the first time how I think it works, then I edit it and reiterate on it so it makes sense, THEN I shorten it down.
+**Today's Progress:** Today was rad as: I managed to not only follow along the tutorial in building the slider component, but I also managed to **RE-BUILD** it myself!! _AND_ then I managed to re-factor it, cleaned up a lot of my forEach loops and because I've been doing so much of, like, write out my code the first time how I think it works, then I edit it and reiterate on it so it makes sense, THEN I shorten it down.
 
 **Thoughts:** Oh my goodness, it's crazy to think it was what..less than 2 weeks ago and I couldn't even figure out how in the blue moons a forEach loop would work, nor how I should use one lol. It's all just organising how you want the data to interact and then sort of tidying up the code (_housekeeping_) by wrapping (_encapsulating_) my code blocks in their own specific functions, with an init function wrapper.. It's almost too good to be true.
 
@@ -155,7 +155,7 @@ Then, I threw myself in the deep-end and jumped into _Constructor functions_, bu
 
 #####
 
-**Today's Progress**: Got stuck into the (_easy_) Leetcode grind again, today, because I'm a professional procrastinator!
+**Today's Progress:** Got stuck into the (_easy_) Leetcode grind again, today, because I'm a professional procrastinator!
 
 **Thoughts:** So...I sort of burnt myself out yesterday doing that constructor function and then trying to figure out how it works.. I should have just stopped whilst I was on a high with the slider, _lol_.
 
@@ -169,7 +169,7 @@ I also got to practice some input validation & error checking using my short cir
 
 #####
 
-**Today's Progress**: Another day of _semi_-procastination.... Made a shitty rock-paper-scissors game out of, _mostly_, Javascript by manipulating the DOM.
+**Today's Progress:** Another day of _semi_-procastination.... Made a shitty rock-paper-scissors game out of, _mostly_, Javascript by manipulating the DOM.
 
 **Thoughts:** I'm a serial procastinator, so I sat down today and whipped together a very shitty rock, paper, scissors game. How original, right?
 
@@ -183,7 +183,7 @@ I implemented some of the concepts I'm most familiar with, like my random number
 
 #####
 
-**Today's Progress**: Today...I stopped putting off the data science theory lectures and ripped into the next section: **Object Oriented Programming with Javascript**!
+**Today's Progress:** Today...I stopped putting off the data science theory lectures and ripped into the next section: **Object Oriented Programming with Javascript**!
 
 **Thoughts:** Man, **fuck** Javascript, honestly. Look, I get it, it's _not_ an object oriented language in the traditional sense, and using it like one is the literal difinition of three steps forwards, two steps back, but I digress..
 
@@ -195,7 +195,7 @@ I _really_ learned about **abstraction**, **encapsulation**, **inheitance**, and
 
 #####
 
-**Today's Progress**: I've spent the last two days actively avoiding the data science theory and decided I'd do some more practice with DOM Manipulation, and taking the logic from my rock paper scissors project, I made..what was _originally_ a text adventure, like a _Choose-Your-Own-Adventure_ sorta'schtick.
+**Today's Progress:** I've spent the last two days actively avoiding the data science theory and decided I'd do some more practice with DOM Manipulation, and taking the logic from my rock paper scissors project, I made..what was _originally_ a text adventure, like a _Choose-Your-Own-Adventure_ sorta'schtick.
 
 I spent **way** too long writing up a story for it all, just to inevitably scrap it because I'm an idiot and didn't think it would be a wise choice to at least _number_ the story slides so I didn't get confused, lol. _lmao_, even.
 
@@ -236,7 +236,7 @@ How **good** is destructuring, _right_? Of course, I ended up mutating the entir
 
 #####
 
-**Today's Progress**: I **finished** the quiz app!!!!! Oh my god it was the _dumbest_ problem ever that got me:
+**Today's Progress:** I **finished** the quiz app!!!!! Oh my god it was the _dumbest_ problem ever that got me:
 
 _ALL_ I needed to do was to check if the results scene was present, and if it was, to call the function responsible for picking the class.. I really got some good practice refactoring my code again, especially regarding making sure that my functions do **_ONE THING SPECIFICALLY_**. Thing I'm most proud of is that 've still managed to keep the logic that displays the choices just...working, and all from using a simple _forEach()_ loop.
 
@@ -250,7 +250,7 @@ I'm still _not_ making it live, though: though the quiz logic _works_, and I'm (
 
 #####
 
-**Today's Progress**: I did a lot of javascript methods practice questions and just kinda..got in the vibe of switching my mindset up in regards to coding.
+**Today's Progress:** I did a lot of javascript methods practice questions and just kinda..got in the vibe of switching my mindset up in regards to coding.
 
 **Thoughts:** So I was following another course I have, from _Brad Traversy_, and it's just like, a shit load of Javascript algorithms and data science practice questions - like self-imposed homework, man, it's _amazing_.
 
@@ -262,7 +262,7 @@ That said, I _still_ need to crack on with the Data Science & THeory section, st
 
 ### Days 17-23: Wednesday-Tuesday, 22nd May-28th May, 2024
 
-**Week's Progress**: This week I started to get my hands dirty with Object-Oriented Programming (_OOP_) concepts, delving into the four fundamental principles: **Abstraction**, **Encapsulation**, **Inheritance**, and **Polymorphism**. I kicked this off with creating simple constructor functions and classes in JavaScript and classes to create objects that can interact with each other.
+**Week's Progress:** This week I started to get my hands dirty with Object-Oriented Programming (_OOP_) concepts, delving into the four fundamental principles: **Abstraction**, **Encapsulation**, **Inheritance**, and **Polymorphism**. I kicked this off with creating simple constructor functions and classes in JavaScript and classes to create objects that can interact with each other.
 
 But you know what we _really_ got into? **_Prototypal Inheritance_**. I learned about how methods are delegated, got my head around the inheritance chain, learned how it's the **PROTOTYPES** themselves that are the big bosses of the Javascript world. I also got to work with setters & getters, and I spent a lot of time learning how to refactor my code, and by that I mean that I want to try to break up my code into individual pieces that have a unique task to do, and they specifically _only_ do that task, then I essentially call those functions on instantiated objects (_I know, fancy, right?_) to interact with them which has been _wild_.
 
@@ -293,7 +293,7 @@ I've also been starting to get suprisingly decent at refactoring my code, too, p
 
 ### Days 23-29: Wednesday-Monday, 28th May - Monday 3rd June, 2024
 
-**Week's Progress**: Gonna be another **BIG** one for the week again. I spent the entire week working on a project that revolved entirely around **_OOP and Javascript_** to really hammer home the _PTSD_ from learning OOP for the first-time through the lens of the Javascript language.
+**Week's Progress:** Gonna be another **BIG** one for the week again. I spent the entire week working on a project that revolved entirely around **_OOP and Javascript_** to really hammer home the _PTSD_ from learning OOP for the first-time through the lens of the Javascript language.
 
 I also got to work with using the Geolocation API to get a users location relative to pulling their GPS data out of an online object. How _fuckin'_ rad is **that**!? We went over the project architecture & structure initially, and yeah, _OK_, it took me 2 whole days to get my head around the fact that a flowchart (_gonna call 'em flowie's from now on_) map makes just **starting** a project SO. MUCH. EASIER. It's just ES6 classes; all the way down (_and up, lol_). I also discovered the beauty of, again, bundling my functionalities together, like having a function for all my _eventHandlers_! The more I code, the more I start to see where and what to refactor, which is _so_ sick.
 
@@ -307,7 +307,7 @@ I also spent a solid day refactoring code from my old projects, mainly my Text A
 
 ### Day 30: Tuesday, 4th June, 2024
 
-**Today's Progress**: Today I started learning about AJAX: Aynschronous Javascript and XML. The theory part was great, but then I hit a huge blocker in regards to the actual course content itself:
+**Today's Progress:** Today I started learning about AJAX: Aynschronous Javascript and XML. The theory part was great, but then I hit a huge blocker in regards to the actual course content itself:
 
     const btn = document.querySelector('.btn-country');
     const countriesContainer = document.querySelector('.countries');
@@ -391,3 +391,112 @@ All that horseshit code you see above you there is _supposed_ to work, and by wo
 **Thoughts:** 30 days of consecutive code!!! And to celebrate my milestone accomplishment I spent probably half of my coding time today just googling shit and feeling like a _right fucking monkey_. But get this, right: I did the full _lazy POS_ shit thing and copy/pasted the code from the QA section, and even _THAT_ times out, **despite** both instructor and student swearing black & blue that it's all _right-and-tight yeah looks good mate_. So I threw my code into ChatGPT, saved, commit, and reviewed the changes on Github and it's using _Object.values()_ to read the properties of the object, when almost **EVERYONE ELSE IN THE ENTIRE GODDAMN QA IS USING ARRAY DESTRUCTURING TO ACCESS THE SAME SHIT**. I even tried passing _Object.create()_ onto the objects themselves and then filling them with the data _from_ that object, _that's_ how fucked up this part of the section was.. Oh, and there's **no** docs for the shit. Nooice.
 
 **Link to work:** [Outdated course content can eat my ass](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)
+
+### Days 31-37: Wednesday, 5th June - Tuesday, 11th June 2024
+
+#####
+
+**Week's Progress:** This week I dove into Asynchronous Javascript, in particular Promises and Async/Await. I also spent the week learning about efficiently (and neatly) retrieving data from APIs using these promises by utilising (_and understanding_) asynchronous code
+
+**Thoughts:** **_WOW_**, man, _what a week_.. I tried to procrastinate the theory work as much as I could by starting the week off _diving the fuck into_ learning about Asynchronous code, and conceptualizing how Javascript is like a one-lane highway with a shitload traffic, aka _synchronous code_. But then turns out I can actually run even more code _asynchronously_ in the WebAPI, which is just another part of the _Javascript Runtime Environment_.. I learned about blocking/non-blocking code, _annnnnd_ I **_FINALLY_** learned what a _JSON_ is: it's just a _stupid_ string full of nonsense that represents a javascript object retrieved from an API.
+
+Then I got into learning what was described to me as the "_Old-school way_" of executing asynchronous code: **_AJAX Calls & the XMLHttp Function_**. I had the pleasure of banging my head against the proverbial wall again, as the GeoLocation API we were instructed to use was...outdated (_lmao_), and I'm a stubborn dickhead so I just plowed ahead, using the v3.1 version of that garbage API (_same API that gave me so much grief previously - again, stubborn_) until I just had enough on the Thursday and asked the instructor(s) about what I should do, since I'd run out of ideas and I already felt like a right _POS_ for procrastinating _an entire fucking evening_ by making a really shitty UI mockup for a finance app, a dodgy **Rock-Paper-Scissors** game (_which actually fucking works!_) as well as an even dodgier Connect4 game-which still doesn't work _lol_-trying to avoid even looking at the consistently timing-out geolocation API.
+
+Turns out I'm equally impatient as I am _ridiculously good-looking_, and that not **_ONLY_** did the instructor(s) have their own **working** GeoLocation API just for this project, but that I also had my code in a **WORKING** state and the reason for the constant timeouts was because I have ADSL/2+ internet speeds (_no, seriously, I have ADSL/2+_) **LOL**. _Lmao_, even. Once I got that sorted I _finally_ was excited again to rip back into this section of the course since now I could _literally_ see how my code works instead of just imagining it working.
+
+And then I got stuck into learning about **Promises**. I used to go cross-eyed whenever I saw _Async/Await_ codeblocks: I legimiately thought that they were, and I quote, "_just some react shit i'm not meant to know yet_". Man, how wrong I was _lol_, turns out they're just like check-valves but for Web APIs, and they exist to validate fetched and/or retrievied data (_..not forgetting that **they must always be HANDLED and WRANGLED with error catchers because FUCK you**)_. I learned about **Promisifying**, **Executor (_sick yugioh card btw_) Functions**, as well as the proper syntax for writing them:
+
+    const renderCountry = function (data, className = '') {
+    const html = `
+      <article class="country ${className}">
+      <img class="country__img" src="${Object.values(data.flags)[0]}" />
+      <div class="country__data">
+        <h3 class="country__name">${data.name}</h3>
+        <h4 class="country__region">${data.region}</h4>
+        <p class="country__row"><span>👫</span>${
+          (+data.population / 1000000).toFixed(1)
+          // Our actual pop: 25687041
+        }m people</p>
+        <p class="country__row"><span>🗣️</span>${data.languages[0].name}</p>
+        <p class="country__row"><span>💰</span>${
+          Object.values(data.currencies)[0].name
+        }</p>
+      </div>
+    </article>
+    `;
+
+    countriesContainer.insertAdjacentHTML('beforeend', html);
+    };
+
+
+    const getJSON = function(url, errorMsg =    'Something went wrong..') {
+    return fetch(url).then(response => {
+        if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+        return response.json();
+        });
+    };
+
+    const getCountryData = function (country) {
+
+        getJSON(``,
+        'Country not found'
+        )
+        .then(data => {
+            renderCountry(data[0]);
+            const neighbour = data[0].borders ? data[0].borders[0] : undefined;
+            if (!neighbour) throw new Error('No neighbour found');
+
+
+            return getJSON(``,
+            'Country not found'
+            );
+        })
+        .then(data => {
+            renderCountry(data, 'neighbour');
+        })
+        .catch(err => {
+        console.error(`${err}`);
+        renderError(`Something went wrong, ${err.message}.Try again!`);
+    })
+        .finally((countriesContainer.style.opacity = 1));
+    };
+
+    btn.addEventListener('click', function () {
+        getCountryData('germany');
+    });
+
+I also got stuck into learning to **Promisify** my callback functions for code efficiency as well as how the different queues (_callback and microtask_) in the **Javascript Runtime Engine** function:
+
+    setTimeout(() => console.log('0 sec timer'), 0);
+    Promise.resolve('Resolved promise 1').then(res => console.log(res));
+
+    // Start by creating a new promise using the Promise constructor, so it's just a js object
+    // The promise constructor takes only one argument, and that is the "Executor Function"
+    // The Executor Function will take two arguments, the resolve & reject functions
+    const lotteryPromise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            if (Math.random() >= 0.5) {
+            // resolve marks the promise as fulfilled
+            // resolve() takes the fulfilled value of the promise to be consumed with .then()
+            resolve('PROMISE RESOLVED. ASSUME THE POSITION');
+    } else {
+            // reject marks the promise as rejected
+            // reject() takes the error message that I later want to be used by the catch()error handler
+             // I can also create a new error object to simulate a REAL error
+            reject(new Error('PROMISE UNRESOLVED. YOU LOSE, PUNY HUMAN'));
+            }
+        }, 2000);
+    });
+
+Finally, I _really_ got stuck in to learning about **Async/Await**, as well as the 3 different **Promise Combinators**(_all, race, allSettled_) and their use-cases. Holy fuck, man, _promises are legit so useful_, and if I never have to write another AJAX Request I'll be a happy man - that shit felt like learning CSS floats all over again. For real, though, I've really enjoyed this course so far, and I've been learning so much by staying consistent with the coding. Who woulda' thought the trick to learning to code is the same as getting big at the gym: **consistency**.
+
+Also, I'm leaving out the API in my code examples because IDK if I'm even allwoed to share that since it's not, like, _my_ API.. That said, check out my **Immediately-Invoked Function Expression** _that also humbled the fuck out of me because I forgot these even fucken existed lmao_:
+
+    (async function () {
+            const res = await Promise.race([
+            getJSON(``),
+            getJSON(``),
+            getJSON(``),
+        ]);
+        console.log(res[0]);
+    })();
