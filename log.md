@@ -501,7 +501,7 @@ Also, I'm leaving out the API in my code examples because IDK if I'm even allwoe
         console.log(res[0]);
     })();
 
-**Link to work:** [Asynchronous Javascript - Promises, Async/Await, and AJAX](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)
-**Link to work:** [Dodgy Rock, paper, scissors game](https://github.com/Praeda822/RockPaperScissors)
-**Link to work:** [Even dodgier connect4 game that isnt finished](https://github.com/Praeda822/Connect4)
-**Link to work:**[Front-end Mockup UI Design & chart.js experimentation](https://github.com/Praeda822/PK_RE_Project)
+**Link to work:** [Asynchronous Javascript - Promises, Async/Await, and AJAX](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)<br>
+**Link to work:** [Dodgy Rock, paper, scissors game](https://github.com/Praeda822/RockPaperScissors)<br>
+**Link to work:** [Even dodgier connect4 game that isnt finished](https://github.com/Praeda822/Connect4)<br>
+**Link to work:**[Front-end Mockup UI Design & chart.js experimentation](https://github.com/Praeda822/PK_RE_Project)<br>
