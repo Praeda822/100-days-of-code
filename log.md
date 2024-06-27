@@ -307,6 +307,8 @@ I also spent a solid day refactoring code from my old projects, mainly my Text A
 
 ### Day 30: Tuesday, 4th June, 2024
 
+#####
+
 **Today's Progress:** Today I started learning about AJAX: Aynschronous Javascript and XML. The theory part was great, but then I hit a huge blocker in regards to the actual course content itself:
 
     const btn = document.querySelector('.btn-country');
@@ -504,4 +506,66 @@ Also, I'm leaving out the API in my code examples because IDK if I'm even allwoe
 **Link to work:** [Asynchronous Javascript - Promises, Async/Await, and AJAX](https://github.com/Praeda822/Javascript-Notes/blob/master/16%20Asynchronous%20Javascript/script.js)<br>
 **Link to work:** [Dodgy Rock, paper, scissors game](https://github.com/Praeda822/RockPaperScissors)<br>
 **Link to work:** [Even dodgier connect4 game that isnt finished](https://github.com/Praeda822/Connect4)<br>
-**Link to work:**[Front-end Mockup UI Design & chart.js experimentation](https://github.com/Praeda822/PK_RE_Project)<br>
+**Link to work:** [Front-end Mockup UI Design & chart.js experimentation](https://github.com/Praeda822/PK_RE_Project)<br>
+
+### Day 38: Wednesday, 12th June, 2024
+
+#####
+
+**Today's Progress:** Today I focused on Modern JavaScript development, specifically the implementation of ES6 modules. I practiced successfully importing/exporting functions across different files, as well as understanding (_attempting to lol_) the complexities of bundling and transpiling code.
+
+**Thoughts:** OK, _fuck me_, today was a _YUUUUGE_ day of theory getting stuck into the _Modern Javascript Development_ build process/lifecycle. Remember how when I was learning OOP with JS I was complaining that OOP and Javascript, whilst it works, still feels like having to do the same thing twice to accomplish a task once? _Yeah.._ it's back; it never really ended, honestly, and they call it _Transpiling/Polyfilling_. _Thank fucking god_ we live in the year of our Lord 2024AD and apparently I can use a tool for this called **Babel** and that will output for me a final javascript file ready for deployment on a server (_into prod_).
+
+_NOW_ here's the wicked cool part: apparently I don't really have to do any of this, but I'll get to play around with NPM and install **Parcel** (_or webpack, but apparently webpack is cooked to learn_) which is a _Javascript Bundler_ that will take the javascript file produced by **Babel** and whip it up into a working model.
+
+Fuck, man, apparently this is the _really_ important stuff so I'm stressing just a bit about it..
+
+**Link to work:** [Modern Javascript Modules, Tooling, Implementation](https://github.com/Praeda822/Javascript-Notes/tree/master/17%20Modern%20Javascript%20Modules%20%26%20Tooling)<br>
+
+### Days 39-45: Thursday, 13th June - Wednesday, 19th June 2024
+
+#####
+
+**Week's Progress:** Spent the past week diving deep into modern JS development by structuring my code using modules, transpiling and polyfilling (_Babel_), as well as using & configuring javascript bundlers (_Parcel_) to produce a final working web app. I was able to enhance it further by refactoring my code from boring old modules, to _ES6 modules_, I learned about _async/await_, linking javascript modules together, as well as the implementation of both the _Module Pattern_ and _importing/exporting_ my modules **asynchronously** (_fuck this word lol_).
+
+**Thoughts:** Another absolute _banger_.. Yes, of course it was sarcasm! Something very import I learned this week was a key difference between ES6 modules and scripts:
+<br><br>
+
+**In _ES6 Modules_, the .this keyword is always "undefined" at the top level, and I can also use the _import/export_ syntax**
+
+<br>
+
+**In Scripts, the .this keyword will point to the _.window()_ object, and I am also unable to _import/export_ except at the very top level (_outside of any function/if block_) and _ALL_ my imports are hoisted to the top of the file since _importing always occurs first in modules_**
+
+<br>
+
+Now with that very import reminder out of the way, _what a fucking week, man.._ OK, it wasn't _that_ bad, and I actually enjoyed a lot of the content, especially learning how all of this module importation/exportation is done asynchronously, so _through a **WEB API**_, which means it's a shit load of back & forth, but it doesn't block my code if I fuck it up too badly..._nah, I'm just kidding_, it totally blocks up the code when I fuck it up.
+
+_But PK_, you say, _What could cause the code to shit the bed?_
+
+WELL, calling an asynchronous function will **always return a _Promise_**, and those promises **need** to be handled.._roughly_. For instance:
+
+    async function x(){}
+    console.log('Start fetching..');
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await res.json();
+    console.log(data);
+
+    const lastPost = getLastPost();
+    console.log(lastPost); // Pending Promise
+
+I'm not going to lie, it did take me a good minute (_lmaoo_) to get my head around handling promises, especially syntax-wise as after a while of staring at _fetch/await_ my eyes just sort of glazed over.. But it's not even that hard since the responses are handled by Javascript's built-in _.JSON()_ object and converted to a nice JSON string for me to manage - how good is that.
+
+We really focused in on _scoping_, though, in regards to learning & implementing modules, since the whole point of this section is for us to try & understand how to essentially _build_ our own _APIs_, as well as how to _expose_ them by linking them together with other modules. Overall the whole point of this is for code reuability, and I can get that, but _fuck me dead_ it's a lot to get my head around trying to figure out where everything should go and how I should refactor it when my (_albeit very shitty_) "code" (_I'm just being unnecessarily hard on myself, or so the mrs reckons_) is working to begin with....
+
+But to end on a good note, I _did_ get some _incredible_ notes as well as a new perspective for writing code, and a new approach for how to write & structure that code, as well - reminds me of when I was learning _HTML/CSS_ and the concept of the _Block Element Model(Modifier)_, or **BEM**, was introduced to me.
+
+**Link to work:** [Modern Javascript Modules, Tooling, Implementation](https://github.com/Praeda822/Javascript-Notes/tree/master/17%20Modern%20Javascript%20Modules%20%26%20Tooling)<br>
+
+### Days 46-53: Thursday, 20th June - Thursday, 27th June 2024
+
+**Week's Progress:**
+
+**Thoughts:**
+
+**Link to work:** [Forkify App](https://github.com/Praeda822/Javascript-Notes/tree/master/18%20Forkify%20App)<br>
