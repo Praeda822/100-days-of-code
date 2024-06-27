@@ -564,8 +564,16 @@ But to end on a good note, I _did_ get some _incredible_ notes as well as a new 
 
 ### Days 46-53: Thursday, 20th June - Thursday, 27th June 2024
 
-**Week's Progress:**
+**Week's Progress:** This past week, I started the final project of this Javascript course: the Forkify project, which focuses on building a recipe search and management web application. This project involves several key programming concepts, including MVC (Model-View-Controller) architecture, asynchronous programming with API interactions, state management, pagination, and DOM manipulation.
 
-**Thoughts:**
+**Thoughts:** This past week has been _demoralizing_, to say the least..
+
+I was keen as a bean to rip into this last part of the course, thinking to myself _man I'm so close to finishing I can taste it_, especially since we started the section of the project off with some theory & design, mapping out the **User Stories**, **Features**, as well as another one of those bubble-map flow-charts to outline **code structure**, **maintainability**, and **scalability**. But _booooy_ how wrong I was about the depth of the project scope.
+
+I started off the project by (_attempting_) to seperate the project code into its now 3 different constituents: **model**, **view**, & **controller**, respectively. All's well & good so far. Then I created a **state** variable, that was essentially going to hold the literal application state (_I've been calling it the fake DOM_), and then we broken up the code blocks, again, into the **three** individual components of the _MVC Architecture_: the **Business Logic**, the **Application Logic**, and the **Presentation Logic**. Again, so far so good..
+
+And here is where things got a bit fucky for me, personally, and according to the course's Q&A, I am, and have been, _not_ the only one to experience this feeling of _What the actual **fuck** is going on, here_ in regards to this project, specifically. It's been extremely difficult for me to abstract the, _now 11_ different javascript files and how they're all linked together - I've felt completely overwhelmed with it, and genrally lost in the code. I'm really annoyed with myself for it, since despite doing this for **HOURS** every single day, I'm still struggling a bit, and I get that I'm new at all of this, but I've had to humble myself and, despite not really knowing what's going on (_I know WHY things are working, though, if that makes sense.._), I've been plowing ahead just trying to finish this off, so, _tbh_ I will _definitely_ be reviewing this entire project in month 3 of this challenge.
+
+_Fuck me_, man, MVC architecture is..really difficult the first go 'round, you know?
 
 **Link to work:** [Forkify App](https://github.com/Praeda822/Javascript-Notes/tree/master/18%20Forkify%20App)<br>
