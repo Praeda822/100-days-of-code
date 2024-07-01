@@ -577,3 +577,119 @@ And here is where things got a bit fucky for me, personally, and according to th
 _Fuck me_, man, MVC architecture is..really difficult the first go 'round, you know?
 
 **Link to work:** [Forkify App](https://github.com/Praeda822/Javascript-Notes/tree/master/18%20Forkify%20App)<br>
+
+### Days 54-57: Friday, 28th June - Monday, 1st July
+
+**Week's Progress:** I've spent the past 3 days wrapping up the Javascript Fundamentals course, which is now **DONE**. Implemented the final logic for the user submitted recipes to function properly, as well as more black magic with template literals & AJAX Calls for JSON promises. Also made a to-do list of features I want to implement on the app down the road (_like when I can actually fucking abstract the scope of half the shitshow that is **MVC Architecture**_).
+
+I also made a shitty little weather app that pulls data from an online weather WebAPI (_that's supposedly free.._) and displays it on my page when the user clicks a button. It's nothing special, but I'm sure I'll have use of it in the future (_lmao_).
+
+Finally, I tried implementing NPM stuff into my weather app project, but when I refactored it for the MVC architecture shit the whole fucking app just fell apart, and now I've got _SEVEN different fucking files_ that, for whatever reaason, don't work together at all. And the best part? **No errors**. Fucken-A. **>\_>**
+
+**Thoughts:** I'm still super annoyed with myself since I still feel really lost with the **Forkify Project**. I did discover the wonderful world of _JSCDocs_, however, but...that still didn't really help me all that much with understanding the Forkify project better.
+
+I'm noticing that I'm becoming extremely proficient at reading, as well as understanding, the code infront of me, but then I somehow manage to fuck myself up and get lostr in the abstractions of which files point to which functions and why - it's so hard to visually imagine & remember _where the fuck everything is_ and then I've got to actually _write_ the code ontop of it. Holy fucking fuck, dude, what am I missing here that I'm making it so hard for myself to understand the **SCOPE** of the project? How the _fuck_ do people keep track of all this shit, even _WITH_ JSDocs???
+
+    /**
+    * Represents the state of the application.
+    * @typedef {Object} State
+    * @property {Object} recipe - The currently selected recipe.
+    * @property {Object} search - The search state.
+    * @property {string} search.query - The search query.
+    * @property {Array} search.results - The search results.
+    * @property {number} search.page - The current page of search results.
+    * @property {number} search.resultsPerPage - The number of search results per page.
+    * @property {Array} bookmarks - The bookmarked recipes.
+    */
+
+    /**
+    * The application state.
+    * @type {State}
+    */
+    export const state = {
+    recipe: {},
+    search: {
+        query: '',
+        results: [],
+        page: 1,
+        resultsPerPage: RES_PER_PAGE,
+    },
+    bookmarks: [],
+    };
+
+    /**
+    * Creates a recipe object based on the provided data.
+    *
+    * @param {Object} data - The data object containing recipe information.
+    * @returns {Object} - The created recipe object.
+    */
+    const createRecipeObject = function (data) {
+    const { recipe } = data.data;
+    return {
+        id: recipe.id,
+        title: recipe.title,
+        publisher: recipe.publisher,
+        sourceUrl: recipe.source_url,
+        image: recipe.image_url,
+        servings: recipe.servings,
+        cookingTime: recipe.cooking_time,
+        ingredients: recipe.ingredients,
+        // this is a REALLY NICE WAY of conditionally adding properties to an object
+        // if recipe.key is a falsy value, nothing happens since && short-circuits
+        // if recipe.key DOES exist, then the key object is returned and displayed as if the values were on the outside
+        ...(recipe.key && { key: recipe.key }),
+    };
+    };
+
+**THAT** point of the code above is really where I started to get fucked up, when we created that _fake DOM_ to ultimately use it as a comparison/data validator for the _real DOM_ by comparing the missing values between the two, calling a _.render()/.update()_ method to update page contents, dynamically & responsively,and just..reorganising all the data:
+
+    render(data, render = true) {
+        // Check if data is empty or an empty array
+        if (!data || (Array.isArray(data) && data.length === 0))
+        return this.renderError();
+        this._data = data;
+        const markup = this._generateMarkup();
+
+        // If render is false, return the markup string
+        if (!render) return markup;
+
+        // Clear the parent element and insert the markup into it
+        this._clear();
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    }
+
+_Fuck_, again, I just feel so lost in the data flow it's crazy. Idk, it's hard for me to explain what I don't understand since I feel like I don't understand anything, anymore..I just can't remember where all my functions are and what the _fuck_ they do at any one given time..
+
+In even more _tragic_ news, I decided to strike an attempt at making an online **Weather App** that pulls data from a WebAPI and displays it on the screen when the users submits text in an input field. Pretty basic shit, _yeah_? It was **significantly** easier just managing the one _index.js_ file, and I didn't have any issues with fucking around with the data up until I tried to reuse my _.getJSON()_ function from the **Forkify app**:
+
+    /**
+    * Fetches JSON data from the specified URL.
+    *
+    * @param {string} url - The URL to fetch the JSON data from.
+    * @param {string} [errorMsg="Something went wrong.."] - The error message to display if the fetch fails.
+    * @returns {Promise} A promise that resolves to the JSON data.
+    * @throws {Error} If the fetch fails, an error is thrown with the specified error message and status code.
+    */
+    const getJSON = function (url, errorMsg = "Something went wrong..") {
+    return fetch(url).then((response) => {
+        if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+        return response.json();
+    });
+    };
+
+And guess what the problem was almost the _entire fucking time_????<br>
+
+    async function getWeatherData(city) {
+    return getJSON(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+    );
+    }
+
+**I DIDN'T RETURN THE FUCKING JSON CALL. AAAAAAAAAA**
+
+The last totally _shit_ part was when I tried to get _Chat GPT_ to help walk me through how to refactor my code for the **MVC Architecture**. Guess what (_again_)? Broke the _entire fucken project_, and I, _again_ lost sight of the project scope. I'm never asking _Chat GPT_ to advise me of libraries to use, and NPM still managed to totally break my entire fucking project. Also, MVC _can eat my ass_.
+
+Other than that, though, I actually..had a lot of fun with the **Weather App**, since I understood what the fuck was going on with just **ONE FILE**.
+
+**Link to work:** [Forkify App](https://pk-forkifyrecipe.netlify.app)<br>
+**Link to work:** [Weather App](https://pk-weatherapp.netlify.app)<br>
