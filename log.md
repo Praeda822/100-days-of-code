@@ -693,3 +693,15 @@ Other than that, though, I actually..had a lot of fun with the **Weather App**, 
 
 **Link to work:** [Forkify App](https://pk-forkifyrecipe.netlify.app)<br>
 **Link to work:** [Weather App](https://pk-weatherapp.netlify.app)<br>
+
+### Day 58: Tuesday 2nd July
+
+**Today's Progress:** Today I used Javascript to build a calculator, a stopwatch, and a digital clock that updates in real-time (_NO API CALLS_). I also learned about a new method today, _eval()_, which takes a value and literally just evaluates it. FInally, I refactored all of the code in my 3 projects into reusable, modular ES6 classes with (_what I think is..?_) proper data encapsulation, respectively.
+
+**Thoughts:** It was nice to have a break today, _especially_ from the MVC nonsense of the course, and although I made 3 seperate (_albeit shitty_) little apps, I still felt like I was procrastinating..because _I fucken was_. It was good to get some practice making ES6 classes again, though, and since I don't need to worry about MVC I can just instead focus on the code & its data flow. The more times I refactor things, the more I start to understand modular patterns, but that's all going to mean _fuckall_ if I don''t apply it to _imports/exports_ and _promises_, etc..
+
+And all it's taken for it to all make sense again has been _10 hour days_ on the laptop for the past almost 2 months. I want to spend this last coming month before college starts building something cool that I can proud of, but I'm not sure what, yet..
+
+**Link to work:** [PKs JS Calculator](https://pk-jscalculator.netlify.app)<br>
+**Link to work:** [PKs Stopwatch](https://github.com/Praeda822/JS-Components/tree/master/Stopwatch)<br>
+**Link to work:** [PKs Digital Clock](https://github.com/Praeda822/JS-Components/tree/master/Digital%20Clock)<br>
