@@ -705,3 +705,20 @@ And all it's taken for it to all make sense again has been _10 hour days_ on the
 **Link to work:** [PKs JS Calculator](https://pk-jscalculator.netlify.app)<br>
 **Link to work:** [PKs Stopwatch](https://github.com/Praeda822/JS-Components/tree/master/Stopwatch)<br>
 **Link to work:** [PKs Digital Clock](https://github.com/Praeda822/JS-Components/tree/master/Digital%20Clock)<br>
+
+### Days 59-61: Wednesday 3rd July - Friday, July 5th
+
+**Past Day's Progress:** Spent the last 3 days making another mockup design of a website for a Hotel business, Ratto's.
+
+**Thoughts:** Officially 2 months straight of coding _every single day_. So far I've managed to build 6 different little web apps, and I've learned an unbelievable amount of programming and design to the point now where the headaches are a _near daily_ occurence. I finished the Javascript course, desptie feeling lost af in the final recipe book project (_especially regarding state management.._) but I _did_ manage to get my head around it eventually. Which means now the biggest struggle/stressor has been learning, and understanding (_or at the very least attempting to.._) **MVC Architecture**. FML.
+
+So I decided to take a (_well deserved_) break from grinding Javascript foundational concepts and mocked up a front-end design for a Hotel called _Ratto's_, which is just purely _HTML & SCSS_, with my primary focus on being remembering how to use and properly utilise flexbox, so no grid-template layouts in this one. Man, it's crazy now how easy it to write CSS and play around with flexbox, and I'm amazed that I still remember the trick with font-sizing for responsivity with Web Apps, in that I mean you set the font to _62.25%_,consequently defining my base font-size as _1rem = 10px_ which makes sizing SO EASY, since all I had to do to make the entire page responsive was to readjust the sizing of my font!! I know, _clever_, no?
+
+That said, though, I really need to get back into the Javascript swing of things, since if I really _am_ going to be working as a full-stack web Developer/Web Designer, then I need to _practice, practice, practice_ making APIs to retrieve data from an object somewhere out on the internet.. I also went to my local community college's information session for the 6-month programming course I've enrolled in, and I'll be learning **.NET** & **C#**, as well as **React Native**, which sounds like it's going to be sick!! I think with **C#** I'll be able to use it as a backend for future projects with Javascript on the front-end, however I really should learn **PHP** and **Python**.. Fuck man there's so much I need to know before I feel like I can even warrant applying for jobs _lol_. _Lmao_, even.
+
+**Link to work:** [PKs JS Calculator](https://pk-jscalculator.netlify.app)<br>
+**Link to work:** [PKs Stopwatch](https://github.com/Praeda822/JS-Components/tree/master/Stopwatch)<br>
+**Link to work:** [PKs Digital Clock](https://github.com/Praeda822/JS-Components/tree/master/Digital%20Clock)<br>
+**Link to work**: [Ratto's Hotel Booking](https://rattos.netlify.app/)<br>
+**Link to work**: [Weather App](https://pk-weatherapp.netlify.app)<br>
+**Link to work**: [Forkify CRUD Recipe App](https://pk-forkifyrecipe.netlify.app)<br>
