@@ -719,6 +719,56 @@ That said, though, I really need to get back into the Javascript swing of things
 **Link to work:** [PKs JS Calculator](https://pk-jscalculator.netlify.app)<br>
 **Link to work:** [PKs Stopwatch](https://github.com/Praeda822/JS-Components/tree/master/Stopwatch)<br>
 **Link to work:** [PKs Digital Clock](https://github.com/Praeda822/JS-Components/tree/master/Digital%20Clock)<br>
-**Link to work**: [Ratto's Hotel Booking](https://rattos.netlify.app/)<br>
 **Link to work**: [Weather App](https://pk-weatherapp.netlify.app)<br>
 **Link to work**: [Forkify CRUD Recipe App](https://pk-forkifyrecipe.netlify.app)<br>
+
+### Days 62-72: Saturday, July 6th - Tuesday, July 16th
+
+**Past Week's Progress:** I spent this past week refreshing myself on CSS Flex & CSS Grid fundamentals, as well as punishing myself for **6 (_almost 7_) days straight**, wrangling with the hot garbage that is **React**.
+
+**Thoughts:** How ironic is it that I felt that I needed a break from the Javascript, so I smashed out some CSS Grid & Flex projects, _Hotel Los Rattos_ & _Kelly's Expensive Dirt Sales_, and I had so much fun doing them, especially doing the initial layout setup using grid, then maiing my little sub-grids inside of them to place my elements exactly where I want them. Reminded me of when I did my mate's website, [Homescaped](https://homescaped.com.au/), in that I used a sass grid layout setup for it, too.
+
+Which brings me to my next, _and current_, issue: **React fucking sucks**. Seriously. This is now the 4th time I've used React, and it's the fourth time I've wanted to push shards of glass into my eyes. OK, so some context:
+
+I started last week off kind of _floating_, uneusre of what I should and/or ought to do next to solidify my Javascript abilities, but last week I _really_ didn't want to look at Javascript..but I let the mrs convince me otherwise, that I _could learn React_, that I was worried over nothing and was, perhaps, just overthinking the issue at hand. And me, _being fucking me_, decided to throw myself into the proverbial deep end of it all by trying to follow a tutorial online to make an online banking/finance app thing, and it genuinely looked pretty schmik, and I was actually pretty excited to build it all.
+<br>
+_mAyBe tHiS tImE iT wIlL bE dIfFeReNt HaHAHAa_
+<br>
+I even broke it down right down to the single (_AND REQUIRED_) line of code. look at this fucking horseshit:
+
+[UseRef only works in Client Components. Add the 'use client' directive at the top of the file..](https://github.com/Praeda822/pkbanking/commit/66384831a2e8e8ee5612b6e6879c95dccdb3e8e8)
+
+    "use-client";
+
+    import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+    import { Doughnut } from "react-chartjs-2";
+
+    ChartJS.register(ArcElement, Tooltip, Legend);
+
+    const DougnutChart = ({ accounts }: DoughnutChartProps) => {
+    const data = {
+    datasets: [
+        {
+            label: "Banks",
+            data: [1250, 2500, 3750],
+            backgroundColor: ["#0747b6", "#2265d8", "#2f91fa"],
+        },
+    ],
+    labels: ["Bank 1", "Bank 2", "Bank 3"],
+    };
+    return <Doughnut data={data} />;
+    };
+
+    export default DougnutChart;
+
+It genuinely did not matter whether I used the _DougnutChart_ import or the _CountUp_, both of them kept shitting out the exact same error on line 363 of the bundled Javascript because _var useRef="Null"_, whatever the fuck that means, but I've got a funny feeling that it's not supposed to be equal to null.
+
+Queue to me spending, what, **3-4 fucking days** of googling and researching shit, but I still can't get it to work! I even copy/pasted the exact code from the creator's GitHub; Guess what? **Didn't fucking work**. Not even that, I opted to ask the LLMs what the fucking go with it is, surely I just fucked up with a typo of a forgotten parentheses somewhere, _right_? ChatGPT didn't know, Claude said it was right & tight, CoPilot reckons it should be working, and my own personal local model _also_ said that it should be working. I asked online, provided examples of my code, and _lo-and-behold_ it still. doesn't. fucking. work.
+
+Now I feel like a fucking goose since I've wasted a week when I could have been just doing shit the way I fucking know how to using SASS and my own grid setup to position my elements exactly how, and where, I want them on the screen, whilst keeping the entire thing responsive. Which _fucking dickhead_ said it would be a good idea to need **300mb+** of bullshit just to center a div!? If all the modern web apps are built using this shit, since it would appear that React/Typescript is the most (((_popular_))), then it's any wonder nothing fucking works anymore. Even VSCode wouldn't format the React/Typescript properly that's how fucked it all is: _unintuitive abstract dogshit_, and now I just feel deflated & burned out since apparently _it just werks_ for every other dickhead on the internet.
+
+Fuuark I'm looking forward to starting College & learning C# - Vanilla Javascript is chill as, all it's frameworks/libraries etc are just a fucking mess.
+
+**Link to work:** [Kelly's Expensive Dirt Sales](https://pkdirt.netlify.app/)<br>
+**Link to work:** [Hotel Ratto's](https://rattos.netlify.app)<br>
+**Link to work:** [God I fucking detest React](https://github.com/Praeda822/pkbanking/)<br>
