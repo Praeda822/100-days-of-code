@@ -772,3 +772,139 @@ Fuuark I'm looking forward to starting College & learning C# - Vanilla Javascrip
 **Link to work:** [Kelly's Expensive Dirt Sales](https://pkdirt.netlify.app/)<br>
 **Link to work:** [Hotel Ratto's](https://rattos.netlify.app)<br>
 **Link to work:** [God I fucking detest React](https://github.com/Praeda822/pkbanking/)<br>
+
+### Days 73-79: Wednesday, July 17th - Tuesday, 23rd July
+
+**Past Week's Progress:** I spent this past week making a _Breakout_ Game, yes, another tutorial project, but I also gave myself the opportunity to build upon it and add some further features to the game such as levels, progressively incrementing game difficulty (_fancy was of saying I increase the speed of the ball & game overall_), and making the blocks move down on a preset timer using the built-in _setInterval()_ method.
+
+**Thoughts:** _Oh my god_ where do I even begin with this app..
+
+Right, so, first things first I defined a _relatively positioned_ grid polluting the global scope and turning the entire body element into a flex container because I am a _fucken outlaw_. Then I defined the first _absolutely positioned_ block, including _hardcoding_ it's **height** and **width**, as well as an _absolutely positioned_ user paddle.
+
+Yeah simple shit so far, yeah, well _guess what_? Here's where it gets _fucky_: Since the _top-left corner_ of my grid is it's origin, so **(0,0)**. So my variables _xAxis_ and _yAxis_ represent the horizontal distance from the left edge of my grid container and the vertical distance from the bottom edge of my grid container, respectively. So the arrays are essentially _deconstructed_ variables for the axis, with the code below meaning that the user paddle is absolutely positioned **230 pixels from the left edge of the container**. _Good shit_.
+
+    const userStart = [230, 10];
+
+However since I'm not _actually_ defining the pixel value (_represented as a '**px**' string_) within the array, I had to make functions that would essentially allow me to draw the the user's paddle, the ball, and the blocks in the _DOM_. It's _disgusting_, but it works, so eat me:
+
+    function drawBall() {
+        ball.style.left = ballCurrentPosition[0] + 'px';
+        ball.style.bottom = ballCurrentPosition[1] + 'px';
+    }
+
+Now the cheeky part was making a **constructor function** that takes both the _xAxis_ and _yAxis_ as its arguments and then I can define the exact values of the blocks I want to add into the DOM relative to both the respective heights/widths of the blocks themselves and their _current position_ on the _x/y_ axis:
+
+    class Block {
+        constructor(xAxis, yAxis) {
+            this.bottomLeft = [xAxis, yAxis];
+            this.bottomRight = [xAxis + blockWidth, yAxis];
+            this.topRight = [xAxis + blockWidth, yAxis + blockHeight];
+            this.topLeft = [xAxis, yAxis + blockHeight];
+        }
+    }
+
+But since my _Baby-Making Block Factory_ is only responsible for _making_ the blocks, I still need to add them into the DOM and position the blocks using _almost identical_ logic as the one I used to draw the user paddle and ball on the DOM (_it almost feels like cheating LOL_), and every single measurement is done entirely based on the coordinates of its **bottomLeft** variable, and I finally add that block to the grid by apapending the child (_so every block gets added one after the other starting left-to-right_):
+
+    function addBlocks() {
+        for (let i = 0; i < blocks.length; i++) {
+            const block = document.createElement('div');
+            block.classList.add('block');
+            block.style.left = blocks[i].bottomLeft[0] + 'px';
+            block.style.bottom = blocks[i].bottomLeft[1] + 'px';
+            grid.appendChild(block);
+        }
+    }
+
+Fucken _crazy cool_ shit, right?! I haven't even gone into how the Collision detection and how I got the ball to move holy fuck Javascript is sick, but I'll tell you how we did it anyway: <br>
+
+_literally using the built-in **setInterval()** method to animate the ball by calling the **drawBall()** function I created to re-draw the ball on the screen every **30ms**_, so you don't even notice that the ball's not actually moving!
+
+    function drawBall() {
+        ball.style.left = ballCurrentPosition[0] + 'px';
+        ball.style.bottom = ballCurrentPosition[1] + 'px';
+    }
+
+    function moveBall() {
+        ballCurrentPosition[0] += xDirection;
+        ballCurrentPosition[1] += yDirection;
+        drawBall();
+        checkForCollisions();
+    }
+
+And the most cimplicated part of the project was setting up colision detection for when the ball hit one of the blocks; _oh my fucking god_ what a _ballache_ this process was. The **entire game** is dependent upon whether or not the **checkCollision()** function works, since it's _one **huge** conditional if/else block, AND IT WORKS_!
+
+    function checkForCollisions() {
+    // Check for block collisions
+        for (let i = 0; i < blocks.length; i++) {
+            if (
+            ballCurrentPosition[0] > blocks[i].bottomLeft[0] &&
+            ballCurrentPosition[0] < blocks[i].bottomRight[0] &&
+            (ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] &&
+            ballCurrentPosition[1] < blocks[i].topLeft[1]
+            ) {
+            const allBlocks = Array.from(document.querySelectorAll('.block'));
+            allBlocks[i].classList.remove('block');
+            blocks.splice(i, 1);
+            changeDirection();
+            score++;
+            scoreDisplay.innerHTML = score;
+            if (blocks.length == 0) {
+                scoreDisplay.innerHTML = 'You Win!';
+                clearInterval(timerId);
+                document.removeEventListener('keydown', moveUser);
+            }
+        }
+    }
+
+    // Check for wall collisions
+    if (
+        ballCurrentPosition[0] >= (boardWidth - ballDiameter) ||
+        ballCurrentPosition[0] <= 0 ||
+        ballCurrentPosition[1] >= (boardHeight - ballDiameter)
+    ) {
+        changeDirection();
+    }
+
+    // Check for user paddle collision
+    if (
+        ballCurrentPosition[0] > currentPosition[0] &&
+        ballCurrentPosition[0] < currentPosition[0] + blockWidth &&
+        ballCurrentPosition[1] > currentPosition[1] &&
+        ballCurrentPosition[1] < currentPosition[1] + blockHeight
+    ) {
+        changeDirection();
+    }
+
+    // Check for game over (ball hitting the bottom)
+    if (ballCurrentPosition[1] <= 0) {
+        clearInterval(timerId);
+        scoreDisplay.innerHTML = 'You lose!';
+        document.removeEventListener('keydown', moveUser);
+    }
+    }
+
+    function changeDirection() {
+    if (xDirection === 2 && yDirection === 2) {
+        yDirection = -2;
+        return;
+    }
+    if (xDirection === 2 && yDirection === -2) {
+        xDirection = -2;
+        return;
+    }
+    if (xDirection === -2 && yDirection === -2) {
+        yDirection = 2;
+        return;
+    }
+    if (xDirection === -2 && yDirection === 2) {
+        xDirection = 2;
+        return;
+    }
+
+Alright, I'm not going to lie I really struggled with setting up the collision, and I really needed help with it since I genuinely ended up becoming completely lost in the code, especially regarding trying to mentally abstract and visualize moving the balls and blocks across their respective axis' - it all just became too much for me, to be honest, and right up until the collision I had enjoyed this project. I ended up just mentally burning myself out of doing more work on this project, and ended up asking ChatGPT to refactor it for compatibility with _and/or_ into ES6 modularity - and the big issue I have with working with the _this_ and _that_ shit involved with Javascript Classes is remembering the protoypal inheritance chain and correctly defining where the _.this_ keyword is supposed to _fucking_ go.. Then the project ultimately ended up with me feeling embarassed when my mate asked me why the game window wasn't _bigger_ but everytime I tried to change some of the variables in my codebase, I would ended up breaking my entire game's design, especially the _collision logic_.. Again, I can understand why the code works the way it does, it's just _fucking keeping track of all the under-the-hood shit that's going on_, man, i've only got so much mental bandwidth (_and patience LOL_).
+
+I genuinely think that I need to go back and revise the **Project Design** section of my Javascript course and, before undertaking any sort of lazy refactoring _and/or_ refactoring for _mOdUlArItY_ (_yes, I feel like I've been personally victimized by Javascript's implementation of OOP_), start designing, like, a _Flow Map/Chart_ thing, just like the instructor showed us how to do..
+
+But I'm glad I made this project! I fel like I learned a lot, especially regarding moving things around within the _DOM_. Another friend asked me if I used something called _Canvas_ to design the game, but I don't know what that is, so that's something for me to research.. Also, my programming course at College has officially just started, too, and we'll be getting taught how to write **.NET**, **C#** (_not Unity, though!!_), and **React Native** for mobile apps, which is going to be _so sick_!! When I showed some of my projects to the boys they were blown away, but I _still_ think they're shit. Maybe Lozza _is_ right..
+
+**Link to work**: [PKs Breakout Game](https://pkbreakout.netlify.app)<br>
