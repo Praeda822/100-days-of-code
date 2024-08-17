@@ -967,4 +967,10 @@ Finally, as part of my **OOP** class, I got to write my _very first console appl
 
 They're legit making me type out what I want my variable's data type to be _every single fucking time_ I wnt to use a variable to store a value - oh my god what an absolutely unnecessarily verbose ball-breaker this is going to be coming from having only _just learned Javascript_..
 
+I _also_ started learning **Microsoft SQL Server**, using **Microsoft SQL Server Management Studio** (_jfc what a mouthful_), as part of my **Database** class! SQL is..interesting: For our Database class, our Homework was to manually select data out of explicit Rows/Columns from specified tables, and we were introduced to the basic syntax and overall look (_feel?_) of reading, as well as comprehending, SQL.
+
+Finally...on thursdays we have our **ICT and Analysis** class, which is all about governance compliance, learning to speak legalese, navigating the corporatised populist socio-political landscape of working in the modern contemporary tech industry (_wow, **another** mouthful_). But it was genuinely interesting as we were asked to summarise the objectives of the **EPBC** (_Environment Protection and Biodiversity Conservation Act 1999_), we reviewed the **Web Content Accessibility Guidelines**, and I had the opportunity to advocate for _why_ young people are beneficial to the work force, adhering to Australian equal opportunity & diversity guidelines. Lovely jubbly.
+
 **Link to work**: N/A
+
+### Days 85-91: Wednesday, 24th July - Saturday, 27th July
