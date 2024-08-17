@@ -908,3 +908,63 @@ I genuinely think that I need to go back and revise the **Project Design** secti
 But I'm glad I made this project! I fel like I learned a lot, especially regarding moving things around within the _DOM_. Another friend asked me if I used something called _Canvas_ to design the game, but I don't know what that is, so that's something for me to research.. Also, my programming course at College has officially just started, too, and we'll be getting taught how to write **.NET**, **C#** (_not Unity, though!!_), and **React Native** for mobile apps, which is going to be _so sick_!! When I showed some of my projects to the boys they were blown away, but I _still_ think they're shit. Maybe Lozza _is_ right..
 
 **Link to work**: [PKs Breakout Game](https://pkbreakout.netlify.app)<br>
+
+### Days 80-84: Wednesday, 24th July - Saturday, 27th July
+
+**Past Week's Progress:** Introduced to basic OOP Programming concepts, given my timetable, introduced myself to my fellow students, and given my curriculum this week. Spent majority of the week doing admin and preparing myself for the coming semester.
+
+**Thoughts:** First week of enrollment at college to get official accreditation to become a Senior Software Developer!! Unfortunately we all missed our very first class, **Mobile App Development** due to the campus' orientation, but our first class, **Object-Oriented Programming** was pretty interesting: we met our Head Teacher (_super cool dude, **extremely** well-educated, and **noticably** well spoken_) and he gave us all a task to pick something from our personal lives that we do the best, like making a paper plane, for example, and then share it with another member of the class.
+
+_Originally_, I wrote what I had believed at the time (_lmao_) were _very simple_ instructions for how to fix a water leak on a copper pipe by silver brazing the hole with either oxygen/acetylene & silver solder, or a turbo torch (_map gas_) and a burning personal desire to succeed at all costs, or at least until the _bossman_ gets back. Well, I shared it with another bloke-he introduced himself as Gregory, lovely man-and he smiled, laughed, looked at me and says:
+
+        "yeah, it's OK, but it has a lot of assumed knowledge and it's very wordy"
+
+Then I read his instructions, which I will be honest with you and admit that I don't remember what he wrote at all because not only was it now _3 weeks_ ago, but we have _alot_ of work to do, and I'm a genuinely forgetful dude sometimes (_it's **legit** the **fucking** adhd i swear_).
+
+With that aside, naturally you'd think I'd go back, and reiterate on the work I've done, _right_? **Wrong**.
+
+I totlly re-wrote the entire thing, and instead decided to describe the _nuance_ of how to do an ollie on a skateboard, and..accidentally injected a bit of my own writing style into it. **Fuck**. I did, however, share this one with another enthusiastic young man in my course, Rayhaan, and he was _genuinely_ lost for words after I told him I've been skateboarding for over 20 years (_he doesn't know I still suck, though, LOL_):
+
+    1. List the materials required for the task (_Inputs_):
+    - Skateboard
+    - Good shoes
+    - Strong ankles
+    - Willingness to not give up
+    - Patience
+    - Persistence
+
+    2. Write what the final product would be (_Outputs_):
+    - One successful Ollie
+    - One satisfied, happy skateboarder
+    - Potentially impressed peers
+
+    3. Write what preperation is required, _if any_, to do the task (_Process_):
+    - Ensure you have a _clean_, _flat_, and **smooth** (_pour_) _concrete surface_, **swept with a broom**
+    - Ensure your skateboard is in good condition,
+        e.g. tighten/loosen trucks, clean & spray bearings with WD-40 whilst spinning wheels, no tears in grip-tape, etc.
+    - Warm up your legs/ankles/joints and roll around the surface on your board
+    - Wear appropriate safety gear (_HELMET, KNEE-PADS, ELBOW-PADS_)
+
+    1. The Stance            |    Stand on the skateboard with your front foot just behind the bottom-two bolts of your trucks, and your backfoot on the tail of your skatebaord, ensuring you both keep your shoulders centered (square) with the board for balance and THAT YOU KEEP YOUR HEAD UP WITH YOUR CHIN POINTED TOWARDS WHERE YOU WANT TO GO - you may take a rolling start if you wish however it's, ironically, much harder
+
+    2. The Pop               |    Keeping your shoulders square with the board, AS WELL AS KEEPING YOUR HEAD UP, pop the tail of the skateboard with your back foot by jumping, ensuring you tuck your knees to your chest, and literally "tapping" the back of the board with your foot as soon as you feel your foot leave the board, as this will pop the front of the board hard into the air
+
+    3. The  Slide            |    Right as you pop the board, using your front foot bend your ankle and slide that front foot up towards the front of your skateboard, aiming to keep your board (and shoulders) parallel to the ground in order to level out the skateboard in the air, it will feel like you are "catching", or "leading", the board with your front foot - you'll know you're getting this right because you'll feel your shoe drag on the grip-tape and your shoe should leave marks on the grip tape from the friction
+
+    4. The Stick             |    As you feel the board begin to balance out, straighten out your front foot followed quickly by your legs, aiming to keep the soles of your feet as close to center (square) between the bolts of the trucks of your board (as this is the most steady part of the board to stand), ensuring that you bend your knees as you land to absorb the impact - REMEMBER TO KEEP YOUR HEAD UP AND YOUR CHIN POINTED TOWARDS WHERE YOU WANT TO GO
+
+    5. The Roll-Away         |    Straighten your legs, keep your balance centered on the board, and cruise away with your hands in your pockets, ensuring you smile at any girls that were watching - notice that the entire process almost feels like a sort-of "rocking" motion from start-to-finish
+
+Finally, as part of my **OOP** class, I got to write my _very first console application_ with **Visual Studio 2022**:
+
+    Console.WriteLine("Enter your First Name, Please: ");
+    String firstName = Console.ReadLine();
+    Console.WriteLine("Enter your Last Name, Please: ");
+    String lastName = Console.ReadLine();
+    Console.WriteLine("Enter your Title, Please: ");
+    String yourTitle = Console.ReadLine();
+    Console.Write("Your Full Name is: " + yourTitle + " " + firstName + " " + lastName);
+
+They're legit making me type out what I want my variable's data type to be _every single fucking time_ I wnt to use a variable to store a value - oh my god what an absolutely unnecessarily verbose ball-breaker this is going to be coming from having only _just learned Javascript_..
+
+**Link to work**: N/A
